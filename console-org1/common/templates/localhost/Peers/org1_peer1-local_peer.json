@@ -1,6 +1,6 @@
 {
     "display_name": "org1_peer1 - local",
-    "grpcwp_url": "https://localhost:7443",
+    "grpcwp_url": "https://localhost:7143",
     "api_url": "grpcs://peer0.org1.example.com:7051",
     "operations_url": "http://localhost:9444",
     "msp_id": "Org1MSP",

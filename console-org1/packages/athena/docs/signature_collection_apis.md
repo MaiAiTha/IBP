@@ -54,7 +54,7 @@ Use this api to view a single signature collection transaction.
 		"successes": [   // response
 			{
 				"msp_id": "org2",
-				"optools_url": "http://localhost:3000",
+				"optools_url": "http://localhost:3100",
 				"message": "ok",
 				"tx_id": "abcd"
 			}
@@ -70,7 +70,7 @@ Use this api to view a single signature collection transaction.
 	"orgs2sign": [
 		{
 			"msp_id": "org1",
-			"optools_url": "http://localhost:3000",
+			"optools_url": "http://localhost:3100",
 			"timeout_ms": 10000,
 			"signature": "MEUCIQDH1FjDb5TAOyLFjvwMXb7qoLQGiH33djQJeYr2trNknQIgIuIDJrvtCGG1gX8WTeUd7p4MzxyaPls4DaStbnRbnho=",
 			"timestamp": 0
@@ -182,7 +182,7 @@ It will also be used by OpTools to receive a signature collection tx from other 
 
 			// [c] [required] the OpTools url of this org. include protocol, port, & hostname (path is no longer needed)
 			// the path to use during distribution will be decided internally (`/api/v1/*` or `/api/v2/*`) by the paths availability.
-			optools_url: "http://localhost:3000",
+			optools_url: "http://localhost:3100",
 
 			// [c] [optional] max time to wait (in ms) for this org's OpTools to respond. defaults 10 seconds
 			// not applicable if distribute is "none"

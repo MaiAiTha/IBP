@@ -133,7 +133,7 @@
 		"script-src 'self' 'unsafe-eval' 'unsafe-inline' *.ibm.com api.segment.com cdn.segment.com console.bluemix.net *.braze.com lpcdn.lpsnmedia.net *.liveperson.net *.medallia.eu *.kampyle.com",
 		"style-src 'self' 'unsafe-inline' *.ibm.com *.medallia.eu"
 	],
-	"host_url": "http://localhost:3000",
+	"host_url": "http://localhost:3100",
 	"host_white_list": [
 		".*"
 	],

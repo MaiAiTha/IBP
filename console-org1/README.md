@@ -58,7 +58,7 @@ Run the following command to create a zip of the console JSONs to match the netw
 `./scripts/createAssets.sh`
 
 ## Console setup
-* Open browser to URL http://localhost:3000/
+* Open browser to URL http://localhost:3100/
 * Login with admin/password
 * Change password
 

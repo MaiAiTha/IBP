@@ -52,7 +52,7 @@ describe('Signature Collection Lib', () => {
 		tools.stubs = createStubs();
 		common.ev.STR.SIG_OPEN = 'open';
 		common.ev.STR.SIG_CLOSED = 'closed';
-		common.ev.HOST_URL = 'http://localhost:3000';
+		common.ev.HOST_URL = 'http://localhost:3100';
 		signature_collection_lib = require('../../../libs/signature_collection_lib.js')(common.logger, common.ev, tools);
 		tools.stubs.getAllPartyData = sinon.stub(signature_collection_lib, 'getAllPartyData');
 		done();
@@ -167,7 +167,7 @@ describe('Signature Collection Lib', () => {
 								const body = {
 									orderers2sign: [{
 										msp_id: 'test0',
-										optools_url: 'http://localhost:3000',
+										optools_url: 'http://localhost:3100',
 										signature: 'something'
 									}]
 								};
@@ -185,7 +185,7 @@ describe('Signature Collection Lib', () => {
 								const doc = {
 									orderers2sign: [{
 										msp_id: 'test',
-										optools_url: 'http://localhost:3000'
+										optools_url: 'http://localhost:3100'
 									}]
 								};
 								const ret = signature_collection_lib.build_destinations(null, doc);
@@ -266,7 +266,7 @@ describe('Signature Collection Lib', () => {
 								const body = {
 									orgs2sign: [{
 										msp_id: 'test1',
-										optools_url: 'http://localhost:3000',
+										optools_url: 'http://localhost:3100',
 										signature: 'something'
 									}]
 								};
@@ -280,7 +280,7 @@ describe('Signature Collection Lib', () => {
 										optools_url: 'http://localhost:3002',
 									}, {
 										msp_id: 'test1',
-										optools_url: 'http://localhost:3000',
+										optools_url: 'http://localhost:3100',
 									}],
 									orgs2sign: [{
 										msp_id: 'test4',
@@ -310,7 +310,7 @@ describe('Signature Collection Lib', () => {
 								const body = {
 									orgs2sign: [{
 										msp_id: 'test1',
-										optools_url: 'http://localhost:3000',
+										optools_url: 'http://localhost:3100',
 										signature: 'something',
 									}],
 									distribute: 'all',
@@ -603,7 +603,7 @@ describe('Signature Collection Lib', () => {
 						// 		const body = {
 						// 			orderers2sign: [{
 						// 				msp_id: 'test0',
-						// 				optools_url: 'http://localhost:3000',
+						// 				optools_url: 'http://localhost:3100',
 						// 				signature: 'something'
 						// 			}]
 						// 		};
@@ -621,7 +621,7 @@ describe('Signature Collection Lib', () => {
 						// 		const doc = {
 						// 			orderers2sign: [{
 						// 				msp_id: 'test',
-						// 				optools_url: 'http://localhost:3000'
+						// 				optools_url: 'http://localhost:3100'
 						// 			}]
 						// 		};
 						// 		const ret = signature_collection_lib.build_destinations(null, doc);
@@ -704,7 +704,7 @@ describe('Signature Collection Lib', () => {
 						// 		const body = {
 						// 			orgs2sign: [{
 						// 				msp_id: 'test1',
-						// 				optools_url: 'http://localhost:3000',
+						// 				optools_url: 'http://localhost:3100',
 						// 				signature: 'something'
 						// 			}]
 						// 		};
@@ -718,7 +718,7 @@ describe('Signature Collection Lib', () => {
 						// 				optools_url: 'http://localhost:3002',
 						// 			}, {
 						// 				msp_id: 'test1',
-						// 				optools_url: 'http://localhost:3000',
+						// 				optools_url: 'http://localhost:3100',
 						// 			}],
 						// 			orgs2sign: [{
 						// 				msp_id: 'test4',
@@ -748,7 +748,7 @@ describe('Signature Collection Lib', () => {
 						// 		const body = {
 						// 			orgs2sign: [{
 						// 				msp_id: 'test1',
-						// 				optools_url: 'http://localhost:3000',
+						// 				optools_url: 'http://localhost:3100',
 						// 				signature: 'something',
 						// 			}],
 						// 			distribute: 'all',

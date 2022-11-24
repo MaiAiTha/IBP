@@ -48,10 +48,10 @@ const createStubs = () => {
 
 const setEvSettings = () => {
 	ev.AUTH_SCHEME = 'appid';
-	ev.HOST_URL = 'http://localhost:3000';
-	ev.LOGIN_URI = 'http://localhost:3000';
-	ev.LOGOUT_URI = 'http://localhost:3000';
-	ev.CONFIGTXLATOR_URL = 'http://localhost:3000';
+	ev.HOST_URL = 'http://localhost:3100';
+	ev.LOGIN_URI = 'http://localhost:3100';
+	ev.LOGOUT_URI = 'http://localhost:3100';
+	ev.CONFIGTXLATOR_URL = 'http://localhost:3100';
 	ev.DB_SYSTEM = 'athena_system';
 	ev.APP_ID = {};
 	ev.ACCESS_LIST = {

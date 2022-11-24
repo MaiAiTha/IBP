@@ -111,7 +111,7 @@ describe('Signature Collection APIs', () => {
 								expect(res.body).to.deep.equal({
 									id: '03_ibp_db_backup_',
 									message: 'in-progress',
-									url: 'http://localhost:3000/ak/api/v3/backups/03_ibp_db_backup_'
+									url: 'http://localhost:3100/ak/api/v3/backups/03_ibp_db_backup_'
 								});
 								tools.stubs.retry_req.resetHistory();
 							}
@@ -218,7 +218,7 @@ describe('Signature Collection APIs', () => {
 								res.body.url = res.body.url.substring(0, 45);
 								expect(res.body).to.deep.equal({
 									message: 'in-progress',
-									url: 'http://localhost:3000/ak/api/v1/webhooks/txs/'
+									url: 'http://localhost:3100/ak/api/v1/webhooks/txs/'
 								});
 							}
 						},

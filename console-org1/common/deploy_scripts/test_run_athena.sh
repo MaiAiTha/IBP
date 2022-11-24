@@ -4,9 +4,9 @@
 # ------------------------------------------------------------------------
 
 # export these values so the subshell running athena will be able to see them
-export HOST_URL="${HOST_URL:=http://localhost:3000}"
+export HOST_URL="${HOST_URL:=http://localhost:3100}"
 export DB_SYSTEM="${DB_SYSTEM:=athena_system}"
-export DB_CONNECTION_STRING="${DB_CONNECTION_STRING:=http://localhost:5984}"
+export DB_CONNECTION_STRING="${DB_CONNECTION_STRING:=http://localhost:5184}"
 
 echo "HOST_URL=$HOST_URL"
 echo "DB_SYSTEM=$DB_SYSTEM"

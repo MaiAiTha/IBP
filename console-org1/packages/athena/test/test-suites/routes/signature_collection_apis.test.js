@@ -86,7 +86,7 @@ describe('Signature Collection APIs', () => {
 		tools.signature_collection_lib.validateApiSignature = (req, res, next) => {
 			return next();
 		};
-		common.ev.HOST_URL = 'http://localhost:3000';
+		common.ev.HOST_URL = 'http://localhost:3100';
 		signature_collection_apis = require('../../../routes/signature_collection_apis.js')(common.logger, common.ev, tools);
 		signature_collection_lib = require('../../../libs/signature_collection_lib.js')(common.logger, common.ev, tools);
 		this.app = common.expressApp(signature_collection_apis);

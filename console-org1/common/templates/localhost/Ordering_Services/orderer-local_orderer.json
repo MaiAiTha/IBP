@@ -1,6 +1,6 @@
 {
     "display_name": "ordering node - local",
-    "grpcwp_url": "https://localhost:7445",
+    "grpcwp_url": "https://localhost:7145",
     "api_url": "grpcs://orderer.example.com:7050",
     "operations_url": "http://localhost:9443",
     "osnadmin_url": "https://localhost:7053",

@@ -55,9 +55,9 @@ See public Optools configuration settings.
 		"'none'"
 	],
 	"GRPCWPP_TIMEOUT": 300000, // grpc web proxy (http) timeout in ms
-	"HOST_URL": "http://localhost:3000", // home url
+	"HOST_URL": "http://localhost:3100", // home url
 	"HTTP_TIMEOUT": 120000,  // http timeout for athena to respond, ms
-	"LANDING_URL": "http://localhost:3000",
+	"LANDING_URL": "http://localhost:3100",
 	"PORT": "3000",  // port athena is running on
 	"REGION": "local",  // if its "local" we disable things like https
 	"TIMESTAMPS": {
@@ -792,7 +792,7 @@ Use this requests to debug how athena is parsing the clients ip.
 	"ip": "localhost",
 	"ip_hash": "localhost",
 	"headers": {
-		"host": "localhost:3000",
+		"host": "localhost:3100",
 		"user-agent": "Firefox/81.0",
 		"accept": "*",
 		"accept-language": "*",

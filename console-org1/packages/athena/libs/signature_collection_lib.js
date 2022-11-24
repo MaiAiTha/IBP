@@ -157,7 +157,7 @@ module.exports = function (logger, ev, t) {
 
 		// test if a string in array1 *partially* exists in a second array of strings.
 		// we want to use partial comparison b/c the orderer's url int he doc might be a internal proxy route
-		// so ["example.com"] would match both entries of ["http://localhost:3000/grpcwp/https%3A%2F%example.com", "https://example.com]
+		// so ["example.com"] would match both entries of ["http://localhost:3100/grpcwp/https%3A%2F%example.com", "https://example.com]
 		function str_in_array1_partial_in_array2(array1, array2) {
 			if (Array.isArray(array1) && Array.isArray(array2)) {
 				for (let i in array1) {
