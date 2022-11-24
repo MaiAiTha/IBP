@@ -1,0 +1,137 @@
+.migrationPanel {
+	.pageTitle {
+		margin-bottom: 1rem;
+	}
+
+	.migrationWizardModal {
+		margin: 0 0 1.5rem 1rem;
+	}
+
+	.twistyWrapper {
+		padding: 1rem;
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+		background: #21272a;
+	}
+
+	.twistyTitle {
+		background: #0353e9;
+		padding: 1rem;
+		cursor: pointer;
+	}
+
+	.twistyContent {
+		margin-top: 0.5rem;
+		margin-left: 1rem;
+
+		.componentListWrapper {
+			width: 60%;
+		}
+
+		h2 {
+			margin-bottom: 1rem;
+			font-size: 1.15rem;
+		}
+
+		.progressInfoContent {
+			display: flex;
+			justify-content: flex-start;
+
+			p {
+				margin-left: 1rem;
+				font-size: .7rem;
+				margin-top: 0.25rem;
+			}
+
+			.progressIcon {
+				margin-top: 0.2rem;
+			}
+
+			.skeletonText {
+				width: 8rem;
+				margin-top: 0.2rem;
+			}
+
+			.iconNotStarted {
+				fill: #4589ff;
+			}
+
+			.iconSuccess {
+				fill: #24a148;
+			}
+
+			.iconInProgress {
+				fill: #ff832b;
+			}
+		}
+
+		.componentListSkeleton {
+			width: 20rem;
+		}
+	}
+
+	.diagramWrap {
+		display:none; // dsh todo undo when diagram is better
+		width: 35rem;
+		height: 15rem;
+		margin: auto;
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+	}
+
+	.diagram {
+		width: 100%;
+	}
+
+	.centerText {
+		width: 100%;
+		text-align: center;
+		font-weight: 500;
+	}
+
+	.infoTitle {
+		font-weight: 500;
+		font-size: 1.15rem;
+		margin-top: 1.5rem;
+		border-bottom: 1px #555 solid;
+		margin-bottom: 0.5rem;
+		padding-bottom: 0.2rem;
+	}
+
+	.newUrl {
+		margin: 1.6rem 0 0 1rem;
+	}
+
+	.bx--accordion__heading {
+		background: #0353e9;
+	}
+
+	.bx--accordion__heading:hover,
+	.bx--accordion__heading:hover::before {
+		background: #0353e9;
+		border: 1px #fff solid;
+	}
+
+	.bx--accordion__heading,
+	.bx--accordion__heading::before {
+		border: 1px #0353e9 solid;
+	}
+
+	.bx--accordion__content {
+		padding-right: 9%;
+	}
+
+	.toggleHeader {
+		margin-bottom: 1rem;
+	}
+
+	p {
+		margin-left: 1rem;
+		font-size: 0.9rem;
+	}
+
+	.bx--structured-list-td {
+		font-size: .7rem;
+		line-height: 0.8rem;
+	}
+}
