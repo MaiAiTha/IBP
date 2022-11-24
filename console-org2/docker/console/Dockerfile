@@ -12,17 +12,17 @@ RUN less /etc/group
 # ---------------------
 # --- Build Stitch ---
 # ---------------------
-USER 1002
+USER 1001
 WORKDIR $STITCH_DIR
 RUN pwd
-COPY --chown=1002:0 ./stitch .
+COPY --chown=1001:0 ./stitch .
 
 # change owner of repo root before npm install
 # else perm errors can happen on node_modules folder depending on src perms
 USER 0
-RUN chown -R 1002:0 .
+RUN chown -R 1001:0 .
 RUN ls -ld .
-USER 1002
+USER 1001
 RUN npm ci --legacy-peer-deps --omit dev && npm run build_all
 
 # look at stitch output...
@@ -37,16 +37,16 @@ USER 0
 RUN dnf install python2 -y \
 	&& export PATH="$PATH:/usr/bin/python2"
 
-USER 1002
+USER 1001
 WORKDIR $APOLLO_DIR
-COPY --chown=1002:0 ./apollo .
+COPY --chown=1001:0 ./apollo .
 
 # change owner of repo root before npm install
 # else perm errors can happen on node_modules folder depending on src perms
 USER 0
-RUN chown -R 1002:0 .
+RUN chown -R 1001:0 .
 RUN ls -ld .
-USER 1002
+USER 1001
 RUN cp $STITCH_DIR/dist/* $APOLLO_DIR/public/
 RUN npm ci --legacy-peer-deps --omit dev && npm run build
 
@@ -80,7 +80,7 @@ LABEL name="Fabric Operations Console" \
 # --- Build Athena ----
 # ---------------------
 WORKDIR $SERVER_HOME
-COPY --chown=1002:0 ./athena $SERVER_HOME
+COPY --chown=1001:0 ./athena $SERVER_HOME
 
 USER 0
 RUN (dnf update || true)\
@@ -95,10 +95,10 @@ RUN chmod -R 777 ./logs
 # ------ Copy what we need from client layer ------
 # -------------------------------------------------
 USER 0
-COPY --chown=1002:0 --from=client $APOLLO_DIR/build $APOLLO_DIR/build
-COPY --chown=1002:0 --from=client $STITCH_DIR/dist $STITCH_DIR/dist
+COPY --chown=1001:0 --from=client $APOLLO_DIR/build $APOLLO_DIR/build
+COPY --chown=1001:0 --from=client $STITCH_DIR/dist $STITCH_DIR/dist
 ADD ./athena/licenses/*.tar /licenses
-RUN chown -R 1002:0 /home /licenses
+RUN chown -R 1001:0 /home /licenses
 
 # double check...
 RUN ls -l $APOLLO_DIR/build
@@ -106,6 +106,6 @@ RUN ls -l $STITCH_DIR/dist
 RUN ls -l $SERVER_HOME
 
 # Fin
-EXPOSE 8002
-USER 1002
+EXPOSE 3000
+USER 1001
 CMD [ "node", "server_watcher.js" ]

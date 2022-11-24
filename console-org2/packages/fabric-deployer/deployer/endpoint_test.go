@@ -50,7 +50,7 @@ var _ = Describe("Endpoint", func() {
 		})
 
 		It("writes an HTTP error", func() {
-			req := httptest.NewRequest(http.MethodHead, "http://localhost:8081", nil)
+			req := httptest.NewRequest(http.MethodHead, "http://localhost:8080", nil)
 			w := httptest.NewRecorder()
 			endpoint.ServeHTTP(w, req)
 
@@ -69,7 +69,7 @@ var _ = Describe("Endpoint", func() {
 			Logger:  logger,
 		}
 
-		req := httptest.NewRequest(http.MethodHead, "http://localhost:8081", nil)
+		req := httptest.NewRequest(http.MethodHead, "http://localhost:8080", nil)
 		w := httptest.NewRecorder()
 		endpoint.ServeHTTP(w, req)
 
@@ -87,7 +87,7 @@ var _ = Describe("Endpoint", func() {
 			Logger:  logger,
 		}
 
-		req := httptest.NewRequest(http.MethodHead, "http://localhost:8081", nil)
+		req := httptest.NewRequest(http.MethodHead, "http://localhost:8080", nil)
 		w := httptest.NewRecorder()
 		endpoint.ServeHTTP(w, req)
 

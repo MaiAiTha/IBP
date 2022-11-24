@@ -177,7 +177,7 @@ var _ = Describe("Deployer", func() {
 		)
 
 		BeforeEach(func() {
-			req = httptest.NewRequest(http.MethodHead, "http://localhost:8081", nil)
+			req = httptest.NewRequest(http.MethodHead, "http://localhost:8080", nil)
 			w = httptest.NewRecorder()
 		})
 
@@ -197,7 +197,7 @@ var _ = Describe("Deployer", func() {
 		)
 
 		BeforeEach(func() {
-			req = httptest.NewRequest(http.MethodHead, "http://localhost:8081", nil)
+			req = httptest.NewRequest(http.MethodHead, "http://localhost:8080", nil)
 			w = httptest.NewRecorder()
 		})
 
@@ -226,7 +226,7 @@ var _ = Describe("Deployer", func() {
 
 	Context("Basic Auth", func() {
 		It("returns an error if missing authorization header", func() {
-			req, err := http.NewRequest(http.MethodHead, "http://localhost:8081", nil)
+			req, err := http.NewRequest(http.MethodHead, "http://localhost:8080", nil)
 			Expect(err).NotTo(HaveOccurred())
 
 			_, err = d.BasicAuth(req)
@@ -239,7 +239,7 @@ var _ = Describe("Deployer", func() {
 				Username: "admin",
 				Password: "adminpw",
 			}
-			req, err := http.NewRequest(http.MethodHead, "http://localhost:8081", nil)
+			req, err := http.NewRequest(http.MethodHead, "http://localhost:8080", nil)
 			req.SetBasicAuth("a", "b")
 			Expect(err).NotTo(HaveOccurred())
 

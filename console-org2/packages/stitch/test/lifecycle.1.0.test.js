@@ -68,7 +68,7 @@ describe('testing lifecycle 1 (fabric 1.4)', function () {
 				msp_id: '',			// missing
 				client_cert_b64pem: '',
 				client_prv_key_b64pem: '',
-				host: 'http://istillneedthisvm.rtp.raleigh.ibm.com:8081',
+				host: 'http://istillneedthisvm.rtp.raleigh.ibm.com:8080',
 				orderer_host: 'http://istillneedthisvm.rtp.raleigh.ibm.com:8081',
 				configtxlator_url: 'http://istillneedthisvm.rtp.raleigh.ibm.com:8083',
 			};

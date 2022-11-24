@@ -959,7 +959,7 @@ const opts = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	timeout_ms: 10000,     // [optional] client timeout override for this request, defaults 10sec
 };
 stitch.getInstalledChaincode(opts, (err, resp) => {
@@ -972,7 +972,7 @@ stitch.getInstalledChaincode(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	            // the response, not available if "error" is true
 		chaincodesList: [{  // decoded "ChaincodeQueryResponse"
 			escc: "",     // name of the endorsement system cc
@@ -1008,7 +1008,7 @@ const opts = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 
 	 // binary data of the chaincode package. use the peer's cli to <Uint8Array>
 	chaincode_package: cdp
@@ -1028,7 +1028,7 @@ stitch.installChaincode(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	            // the response, not available if "error" is true
 		chaincode_details: {
 			name: "",    // chaincode id
@@ -1063,7 +1063,7 @@ const opts = {
 	msp_id: "PeerOrg1",   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	channel_id: "defaultchannel",   // id of the channel
 	timeout_ms: 10000,     // [optional] client timeout override for this request, defaults 10sec
 };
@@ -1077,7 +1077,7 @@ stitch.getInstantiatedChaincode(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	            // the response, not available if "error" is true
 		chaincodesList: [{  // decoded "ChaincodeQueryResponse"
 			escc: "",     // name of the endorsement system cc
@@ -1113,7 +1113,7 @@ const opts11 = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	timeout_ms: 90000,     // [optional] client timeout override for this request, defaults 10sec
 
 	// id of the channel
@@ -1132,7 +1132,7 @@ stitch.getChaincodeDetailsFromPeer(opts11, (e3, resp3) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	    // the response, not available if "error" was true. decoded "ChaincodeData"
 		data: "",     // unknown field
 		escc: "",     // name of the endorsement system cc
@@ -1180,7 +1180,7 @@ const opts11 = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	orderer_host: "http://orderer_url.com:8081", // *grpc-web* url to orderer. include proto & port
 	timeout_ms: 90000,     // [optional] client timeout override for this request, defaults 10sec
 
@@ -1200,7 +1200,7 @@ stitch.checkIfChaincodeExists(opts11, (e3, resp3) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	   // the response, not available if "error" was true. decoded "ChaincodeData"
 		data: "",     // unknown field
 		escc: "",     // name of the endorsement system cc
@@ -1235,7 +1235,7 @@ const opts = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	orderer_host: "http://orderer_url.com:8081", // *grpc-web* url to orderer. include proto & port
 	channel_id: "defaultchannel",   // id of the channel
 	timeout_ms: 300000,     // [optional] client timeout override for this request, defaults 5min
@@ -1299,7 +1299,7 @@ stitch.instantiateChaincode(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	orderer_host: "http://orderer_url.com:8081", // the "orderer_host" used for this call
 	data: {	            // the response, not available if "error" is true
 		channel_id: "defaultchannel",
@@ -1333,7 +1333,7 @@ const opts = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	orderer_host: "http://orderer_url.com:8081", // *grpc-web* url to orderer. include proto & port
 	channel_id: "defaultchannel",   // id of the channel
 	timeout_ms: 90000,     // [optional] client timeout override for this request, defaults 90sec
@@ -1364,7 +1364,7 @@ stitch.upgradeChaincode(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	orderer_host: "http://orderer_url.com:8081", // the "orderer_host" used for this call
 	data: {	            // the response, not available if "error" is true
 		channel_id: "defaultchannel",
@@ -1438,7 +1438,7 @@ stitch.lc_installChaincode(opts, (err, resp) => {
 {
 	error: false,	      // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	              // the response, not available if "error" is true
 
 		// the "label" the peer found in the cc's zip file
@@ -1502,7 +1502,7 @@ stitch.lc_getInstalledChaincodeData(opts, (err, resp) => {
 {
 	error: false,	      // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	              // the response, not available if "error" is true
 		label: "marbles_1" // chaincode package label
 		packageId: "marbles_1:92321c359d1efcd65dc34c6ee334e37870a4a2130889473173fad3ddf7c02249"
@@ -1567,7 +1567,7 @@ stitch.lc_getAllInstalledChaincodeData(opts, (err, resp) => {
 {
 	error: false,	      // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	              // the response, not available if "error" is true
 		installedChaincodes: [{
 			label: "marbles_1" // chaincode package label
@@ -1639,7 +1639,7 @@ stitch.lc_getInstalledChaincodePackage(opts, (err, resp) => {
 {
 	error: false,	      // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	              // the response, not available if "error" is true
 		chaincodeInstallPackage: "<base 64 encoded tar.gz file>" // this can be huge
 	},
@@ -1784,7 +1784,7 @@ stitch.lc_approveChaincodeDefinition(opts, (err, resp) => {
 {
 	error: false,	      // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	              // the response, not available if "error" is true
 		tx_endorsed: true,
 		tx_submitted: true,
@@ -1927,7 +1927,7 @@ stitch.lc_checkChaincodeDefinitionReadiness(opts, (err, resp) => {
 {
 	error: false,	      // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	              // the response, not available if "error" is true
 		approvals: {  // the keys are members of the channel (I think)
 			Org1MSP: false  // the values are the state of this org's approval
@@ -2079,7 +2079,7 @@ stitch.lc_commitChaincodeDefinition(opts, (err, resp) => {
 {
 	error: false,	      // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	hosts: ["http://peer_url.com:8081"], // the "hosts" used during this call
+	hosts: ["http://peer_url.com:8080"], // the "hosts" used during this call
 	data: {	              // the response, not available if "error" is true
 		tx_endorsed: true,
 		tx_submitted: true,
@@ -2145,7 +2145,7 @@ stitch.lc_getChaincodeDefinitionOnChannel(opts, (err, resp) => {
 {
 	error: false,	      // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	              // the response, not available if "error" is true
 		approvals: {  // the keys are members of the channel (I think)
 			Org1MSP: true  // the values are the state of this org's approval
@@ -2235,7 +2235,7 @@ stitch.lc_getAllChaincodeDefinitionsOnChannel(opts, (err, resp) => {
 {
 	error: false,	      // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	              // the response, not available if "error" is true
 		chaincodeDefinitions: [{
 			collections: {},
@@ -2276,7 +2276,7 @@ This method will return enroll ids aka identities that have been registered on a
 const opts = {
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://ca_url.com:8081", // url to ca. include proto & port
+	host: "http://ca_url.com:8080", // url to ca. include proto & port
 	ca_name: 'ca', // name of the CA within the server
 };
 stitch.getCaIdentities(opts, (err, resp) => {
@@ -2289,7 +2289,7 @@ stitch.getCaIdentities(opts, (err, resp) => {
 {
 	function_name: "getCaIdentities",
 	error: false,	    // true if the call encountered an error, else false
-	host: "http://ca_url.com:8081", // the "host" used for this call
+	host: "http://ca_url.com:8080", // the "host" used for this call
 	stitch_msg: "ok",  // error/success message for your req
 	data: {	             // the CA's response, not available if "error" was true
 		ca_name: 'ca',
@@ -2326,7 +2326,7 @@ This method will return affiliations that have exist on a Fabric CA.
 const opts = {
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://ca_url.com:8081", // url to ca. include proto & port
+	host: "http://ca_url.com:8080", // url to ca. include proto & port
 	ca_name: 'ca', // name of the CA within the server
 };
 stitch.getCaAffiliations(opts, (err, resp) => {
@@ -2339,7 +2339,7 @@ stitch.getCaAffiliations(opts, (err, resp) => {
 {
 	function_name: "getCaAffiliations",
 	error: false,	    // true if the call encountered an error, else false
-	host: "http://ca_url.com:8081", // the "host" used for this call
+	host: "http://ca_url.com:8080", // the "host" used for this call
 	stitch_msg: "ok",  // error/success message for your req
 	data: {	             // the CA's response, not available if "error" was true
 		ca_name: 'ca',
@@ -2374,7 +2374,7 @@ Use this to initially "create" the identity.
 const opts = {
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://ca_url.com:8081", // url to ca. include proto & port
+	host: "http://ca_url.com:8080", // url to ca. include proto & port
 	ca_name: 'ca', // name of the CA within the server
 
 	new_identity: {
@@ -2397,7 +2397,7 @@ stitch.registerCaIdentity(opts, (err, resp) => {
 {
 	function_name: "registerCaIdentity",
 	error: false,	    // true if the call encountered an error, else false
-	host: "http://ca_url.com:8081", // the "host" used for this call
+	host: "http://ca_url.com:8080", // the "host" used for this call
 	stitch_msg: "ok",  // error/success message for your req
 	data: {	             // the CA's response, not available if "error" was true
 		ca_name: 'ca',
@@ -2431,7 +2431,7 @@ Use this to create useable crypto material for an identity.
 **Syntax**:
 ```js
 const opts = {
-	host: "http://ca_url.com:8081", // url to ca. include proto & port
+	host: "http://ca_url.com:8080", // url to ca. include proto & port
 	ca_name: 'ca', // name of the CA within the server
 
 	enroll_id: "some_guy",
@@ -2463,7 +2463,7 @@ stitch.enrollCaIdentity(opts, (err, resp) => {
 {
 	function_name: "enrollCaIdentity",
 	error: false,	    // true if the call encountered an error, else false
-	host: "http://ca_url.com:8081", // the "host" used for this call
+	host: "http://ca_url.com:8080", // the "host" used for this call
 	stitch_msg: "ok",  // error/success message for your req
 	data: {	             // the CA's response, not available if "error" was true
 		Cert: "<base 64 encoded PEM cert>", // this is the signed cert! (signed pub key)
@@ -2504,7 +2504,7 @@ Use this to create useable crypto material for an identity.
 const opts = {
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://ca_url.com:8081", // url to ca. include proto & port
+	host: "http://ca_url.com:8080", // url to ca. include proto & port
 	ca_name: 'ca', // name of the CA within the server
 };
 stitch.reenrollCaIdentity(opts, (err, resp) => {
@@ -2517,7 +2517,7 @@ stitch.reenrollCaIdentity(opts, (err, resp) => {
 {
 	function_name: "reenrollCaIdentity",
 	error: false,	    // true if the call encountered an error, else false
-	host: "http://ca_url.com:8081", // the "host" used for this call
+	host: "http://ca_url.com:8080", // the "host" used for this call
 	stitch_msg: "ok",  // error/success message for your req
 	data: {	             // the CA's response, not available if "error" was true
 		Cert: "<base 64 encoded PEM cert>", // this is the signed cert! (signed pub key)
@@ -2559,7 +2559,7 @@ const opts = {
 	enroll_id: 'some_guy',  // [optional] the identity to delete, else pulled form the client_cert_b64pem
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://ca_url.com:8081", // url to ca. include proto & port
+	host: "http://ca_url.com:8080", // url to ca. include proto & port
 	ca_name: 'ca', // name of the CA within the server
 };
 stitch.deleteCaIdentity(opts, (err, resp) => {
@@ -2572,7 +2572,7 @@ stitch.deleteCaIdentity(opts, (err, resp) => {
 {
 	function_name: "deleteCaIdentity",
 	error: false,	    // true if the call encountered an error, else false
-	host: "http://ca_url.com:8081", // the "host" used for this call
+	host: "http://ca_url.com:8080", // the "host" used for this call
 	stitch_msg: "ok",  // error/success message for your req
 	data: {	             // the CA's response, not available if "error" was true
 		// ? format unknown, id removal is disabled on CA's i've tried - dsh todo
@@ -2608,7 +2608,7 @@ const opts = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	timeout_ms: 10000,     // [optional] client timeout override for this request, defaults 10sec
 };
 stitch.getChannelsOnPeer(opts, (err, resp) => {
@@ -2621,7 +2621,7 @@ stitch.getChannelsOnPeer(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	            // the response, not available if "error" is true
 		channelsList: [{
 			channelId: "" // name of the channel
@@ -2651,7 +2651,7 @@ const opts = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	channel_id: "defaultchannel",   // id of the channel
 	timeout_ms: 10000,     // [optional] client timeout override for this request, defaults 10sec
 
@@ -2673,7 +2673,7 @@ stitch.getChannelConfigFromPeer(opts, (err, resp) => {
 {
 	error: false,	      // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	              // the response, not available if "error" is true
 		channel_id: "defaultchannel",   // id of the channel
 		config_block: {}, // decoded config "Block"
@@ -2757,7 +2757,7 @@ const opts = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	channel_id: "defaultchannel",   // id of the channel
 	include_bin: false, // [optional] defaults false, if true response will include protobuf
 	timeout_ms: 10000,     // [optional] client timeout override for this request, defaults 10sec
@@ -2772,7 +2772,7 @@ stitch.getChannelInfoFromPeer(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	            // the response, not available if "error" is true
 		channel_id: "defaultchannel",   // id of the channel
 		currentblockhash: "",
@@ -2817,7 +2817,7 @@ stitch.getChannelsGenesisFromOrderer(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	            // the response, not available if "error" is true
 		channel_id: "defaultchannel",   // id of the channel
 		block: {},   // decoded genesis "Block"
@@ -2846,8 +2846,8 @@ const opts = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format (admin cert)
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format (admin cert)
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
-	batch_hosts: ["http://peer_url.com:8081"],  // array of http/https **grpc-web** endpoint to reach your peer (if present "host" is ignored)
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
+	batch_hosts: ["http://peer_url.com:8080"],  // array of http/https **grpc-web** endpoint to reach your peer (if present "host" is ignored)
 	orderer_host: "http://orderer_url.com:8081", // *grpc-web* url to orderer. include proto & port
 	channel_id: "defaultchannel",   // id of the channel
 	timeout_ms: 25000,     // [optional] client timeout override for this request, defaults 25sec
@@ -2862,7 +2862,7 @@ stitch.joinPeerToChannel(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	orderer_host: "http://orderer_url.com:8081", // the "orderer_host" used for this call
 	data: {	            // the response, not available if "error" is true
 		channel_id: "defaultchannel",   // id of the channel
@@ -2895,7 +2895,7 @@ const opts = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	channel_id: "defaultchannel",   // id of the channel
 	block_number: 4,              // integer of the block to get, blocks start at 0
 	include_bin: false, // [optional] defaults false, if true response will include protobuf
@@ -2918,7 +2918,7 @@ stitch.getChannelBlockFromPeer(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	            // the response, not available if "error" is true
 		channel_id: "defaultchannel",   // id of the channel
 		block: {},   // decoded "Block"
@@ -3003,7 +3003,7 @@ const opts = {
 	msp_id: "PeerOrg1",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	host: "http://peer_url.com:8081", // *grpc-web* url to peer. include proto & port
+	host: "http://peer_url.com:8080", // *grpc-web* url to peer. include proto & port
 	channel_id: "defaultchannel",   // id of the channel
 	tx_id: 'cf76cbdbc79a567cd2e19536e37d3801a9fd0af5bd655e8ab8267f450bcb9cea',  // transaction id
 	timeout_ms: 10000,     // [optional] client timeout override for this request, defaults 10sec
@@ -3018,7 +3018,7 @@ stitch.getTransactionById(opts, (err, resp) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "PeerOrg1",    // same msp id provide in input args
-	host: "http://peer_url.com:8081", // the "host" used for this call
+	host: "http://peer_url.com:8080", // the "host" used for this call
 	data: {	            // the response, not available if "error" is true
 		channel_id: "defaultchannel",
 		tx_id: "cf76cbdbc79a567cd2e19536e37d3801a9fd0af5bd655e8ab8267f450bcb9cea", // same "tx_id" in input args
@@ -3270,7 +3270,7 @@ const opts = {
 	msp_id: "OrdererOrg",	   //  msp id to use
 	client_cert_b64pem: "string", // the org's signed cert in a base 64 encoded PEM format
 	client_prv_key_b64pem: "string", // the orgs private key in a base 64 encoded PEM format
-	orderer_host: "http://orderer_url.com:8081", // *grpc-web* url to orderer. include proto & port
+	orderer_host: "http://orderer_url.com:8080", // *grpc-web* url to orderer. include proto & port
 	channel_id: "testchainid",   // id of the channel
 	start_block: 4,              // integer of the block to get, blocks start at 0
 	stop_block: 4,  // set it to the same value in "start_block"... I know.. dsh todo!
@@ -3302,7 +3302,7 @@ stitch.getChannelBlockFromOrderer(opts, (err, data) => {
 {
 	error: false,	    // true if the call encountered an error, else false
 	msp_id: "OrdererOrg",    // same msp id provide in input args
-	orderer_host: "http://orderer_url.com:8081", // the "host" used for this call
+	orderer_host: "http://orderer_url.com:8080", // the "host" used for this call
 	data: {	            // the response, not available if "error" is true
 		channel_id: "defaultchannel",   // id of the channel
 		block: {},   // decoded "Block"
@@ -3636,7 +3636,7 @@ stitch.getOSNChannels(opts, (err, data) => {
 ```js
 {
 	error: false,	    // true if the call encountered an error, else false
-	proxy_url: "http://peer_url.com:8081/participation/v1/channels", // the final destination url used for this call
+	proxy_url: "http://peer_url.com:8080/participation/v1/channels", // the final destination url used for this call
 	data: {	            // the response, not available if "error" is true
 		channels: [
 			name: "mychannel", // channel name
@@ -3691,7 +3691,7 @@ stitch.getOSNChannel(opts, (err, data) => {
 ```js
 {
 	error: false,	    // true if the call encountered an error, else false
-	proxy_url: "http://peer_url.com:8081/participation/v1/channels", // the final destination url used for this call
+	proxy_url: "http://peer_url.com:8080/participation/v1/channels", // the final destination url used for this call
 	data: {	            // the response, not available if "error" is true
 		name: "mychannel", // channel name
 		url: "/participation/v1/channels/mychannel",
@@ -3745,7 +3745,7 @@ stitch.joinOSNChannel(opts, (err, data) => {
 ```js
 {
 	error: false,	    // true if the call encountered an error, else false
-	proxy_url: "http://peer_url.com:8081/participation/v1/channels", // the final destination url used for this call
+	proxy_url: "http://peer_url.com:8080/participation/v1/channels", // the final destination url used for this call
 	data: {	            // the response, not available if "error" is true
 		name: "mychannel", // channel name
 		url: "/participation/v1/channels/mychannel",
@@ -3797,7 +3797,7 @@ stitch.unjoinOSNChannel(opts, (err, data) => {
 ```js
 {
 	error: false,	    // true if the call encountered an error, else false
-	proxy_url: "http://peer_url.com:8081/participation/v1/channels", // the final destination url used for this call
+	proxy_url: "http://peer_url.com:8080/participation/v1/channels", // the final destination url used for this call
 	data: {},  // no data is passed...
 	stitch_msg: "ok"       // error/success message for your req
 }

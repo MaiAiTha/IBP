@@ -151,7 +151,7 @@ module.exports = function (logger, t) {
 	// Parse a proxy encoded url and break out base and path
 	//-------------------------------------------------------------
 	/*
-	url = 'http://localhost:8002/grpcwp/http%3A%2F%2Fistillneedthisvm.rtp.raleigh.ibm.com%3A8081'
+	url = 'http://localhost:3000/grpcwp/http%3A%2F%2Fistillneedthisvm.rtp.raleigh.ibm.com%3A8081'
 	opts: {
 		default_proto: 'http',
 		prefix: '/grpcwp/',

@@ -42,7 +42,7 @@ var _ = Describe("Update APIs", func() {
 			body, err := json.Marshal(createCAReq)
 			Expect(err).NotTo(HaveOccurred())
 
-			req, err := http.NewRequest(http.MethodPost, "http://localhost:8081/api/v2/instance/testsid/type/ca/component/ca1", bytes.NewBuffer(body))
+			req, err := http.NewRequest(http.MethodPost, "http://localhost:8080/api/v2/instance/testsid/type/ca/component/ca1", bytes.NewBuffer(body))
 			Expect(err).NotTo(HaveOccurred())
 
 			do(req)
@@ -76,7 +76,7 @@ var _ = Describe("Update APIs", func() {
 			body, err := json.Marshal(request)
 			Expect(err).NotTo(HaveOccurred())
 
-			req, err := http.NewRequest(http.MethodPut, "http://localhost:8081/api/v3/instance/testsid/type/ca/component/ca1/config", bytes.NewBuffer(body))
+			req, err := http.NewRequest(http.MethodPut, "http://localhost:8080/api/v3/instance/testsid/type/ca/component/ca1/config", bytes.NewBuffer(body))
 			Expect(err).NotTo(HaveOccurred())
 
 			do(req)

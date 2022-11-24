@@ -9,7 +9,7 @@ db:
       - ./designdocs/components/plutus.json
       - ./designdocs/components/search_indices.json
 
-port: 8081
+port: 8080
 
 loglevel: debug
 

@@ -441,7 +441,7 @@
 	},
 	"edit_node_request_body": {
 		"display_name": "node-edited",
-		"api_url": "https://localhost:8002"
+		"api_url": "https://localhost:3000"
 	},
 	"invalid_edit_node_request_body2": {
 		"short_name": "node-edited",
@@ -529,7 +529,7 @@
 		"tls_cert": "$TEST-CERT",
 		"tlsca_name": "tls_ca",
 		"type": "fabric-ca",
-		"url2use": "http://localhost:8002/caproxy/http%3A%2F%2Fdal-zbc04c.5.secure.blockchain.ibm.com%3A20407"
+		"url2use": "http://localhost:3000/caproxy/http%3A%2F%2Fdal-zbc04c.5.secure.blockchain.ibm.com%3A20407"
 	},
 	"single_node_response2": {
 		"id": "caone",
@@ -544,7 +544,7 @@
 		"tls_cert": "$TEST-CERT",
 		"tlsca_name": "tls_ca",
 		"type": "fabric-ca",
-		"url2use": "http://localhost:8002/caproxy/http%3A%2F%2Fdal-zbc04c.5.secure.blockchain.ibm.com%3A20407"
+		"url2use": "http://localhost:3000/caproxy/http%3A%2F%2Fdal-zbc04c.5.secure.blockchain.ibm.com%3A20407"
 	},
 	"single_node_response3": {
 		"api_url": "http://dal-zbc04c.5.secure.blockchain.ibm.com:20407",
@@ -586,7 +586,7 @@
 		"tls_cert": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUI2ekNDQVpHZ0F3SUJBZ0lVV1lVRVNMV1FXMGZTRWhtVkxWLzNuWTcvYmFZd0NnWUlLb1pJemowRUF3SXcKYURFTE1Ba0dBMVVFQmhNQ1ZWTXhGekFWQmdOVkJBZ1REazV2Y25Sb0lFTmhjbTlzYVc1aE1SUXdFZ1lEVlFRSwpFd3RJZVhCbGNteGxaR2RsY2pFUE1BMEdBMVVFQ3hNR1JtRmljbWxqTVJrd0Z3WURWUVFERXhCbVlXSnlhV010ClkyRXRjMlZ5ZG1WeU1CNFhEVEl3TURFd09URTBORFV3TUZvWERUSXhNREV3T0RFME5UQXdNRm93SVRFUE1BMEcKQTFVRUN4TUdZMnhwWlc1ME1RNHdEQVlEVlFRREV3VmhaRzFwYmpCWk1CTUdCeXFHU000OUFnRUdDQ3FHU000OQpBd0VIQTBJQUJMc29Md1VDMGRCSkJlZEcwOXRyN2xuNm84T2JMWVgyZVJEZVByWlRzWm8yVjhPZjFBSkl1SEk0CmhEZHFSV0tITXRuamowUUMwK09WNEpYay9LSExtbytqWURCZU1BNEdBMVVkRHdFQi93UUVBd0lIZ0RBTUJnTlYKSFJNQkFmOEVBakFBTUIwR0ExVWREZ1FXQkJUYjB0RGs2WU5LRG9EMWxCWExocWtjTzc0Z1pUQWZCZ05WSFNNRQpHREFXZ0JUOENHNFdINCtJQXdYVWNFMFNVaDJhakowRVV6QUtCZ2dxaGtqT1BRUURBZ05JQURCRkFpRUE5cWl4CktmdC9hL1FqRXZMTXJXOVpyaDRnakVML01tVnpmSjlHZ0pwNUN5a0NJRVFUdmZBbkNHR1BHcVpJa0FNSUFpc1gKbVVkVTFreVZiai96bGhJa0JDSW0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
 		"tlsca_name": "tls_ca",
 		"type": "fabric-ca",
-		"url2use": "http://localhost:8002/caproxy/http%3A%2F%2Fdal-zbc04c.5.secure.blockchain.ibm.com%3A20407",
+		"url2use": "http://localhost:3000/caproxy/http%3A%2F%2Fdal-zbc04c.5.secure.blockchain.ibm.com%3A20407",
 		"version": "1.4.3-0",
 		"zone": "dal12"
 	},
@@ -773,7 +773,7 @@
 			"tls_cert": "pem here",
 			"tlsca_name": "tlsca",
 			"type": "fabric-ca",
-			"url2use": "http://localhost:8002/caproxy/https%3A%2F%2Fn3a3ec3-ca2020.ibpv2-test-cluster.us-south.containers.appdomain.cloud%3A7054",
+			"url2use": "http://localhost:3000/caproxy/https%3A%2F%2Fn3a3ec3-ca2020.ibpv2-test-cluster.us-south.containers.appdomain.cloud%3A7054",
 			"version": "1.4.3-0",
 			"zone": "dal10"
 		}
@@ -1025,7 +1025,7 @@
 			"id": "6e08fe0e990f73593300df411f013036",
 			"type": "fabric-peer",
 			"timestamp": 1539772893852,
-			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8081",
+			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8080",
 			"dep_component_id": "David"
 		},
 		"deployer_resp": {
@@ -1037,7 +1037,7 @@
 			"id": "6e08fe0e990f73593300df411f013036",
 			"type": "fabric-peer",
 			"timestamp": 1539772893852,
-			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8081",
+			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8080",
 			"dep_component_id": "David"
 		},
 		"tx_id": "WTBEuN"
@@ -1501,7 +1501,7 @@
 				"tls_cert": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tDQpNSUlESnpDQ0FwQ2dBd0lCQWdJSmNSLzVBRVRwRzlLaE1BMEdDU3FHU0liM0RRRUJCUVVBTUlHcU1VMHdTd1lEDQpWUVFERTBSdU1EQTROVGxpTFcxNVkyRXhMbWxpY0hZeUxYUmxjM1F0WTJ4MWMzUmxjaTUxY3kxemIzVjBhQzVqDQpiMjUwWVdsdVpYSnpMbUZ3Y0dSdmJXRnBiaTVqYkc5MVpERUxNQWtHQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdUDQpEazV2Y25Sb0lFTmhjbTlzYVc1aE1SQXdEZ1lEVlFRSEV3ZFNZV3hsYVdkb01Rd3dDZ1lEVlFRS0V3TkpRazB4DQpFekFSQmdOVkJBc1RDa0pzYjJOclkyaGhhVzR3SGhjTk1qQXdNVEF5TVRVeE5USTRXaGNOTWpFd01UQXhNVFV4DQpOVEk0V2pDQnFqRk5NRXNHQTFVRUF4TkViakF3T0RVNVlpMXRlV05oTVM1cFluQjJNaTEwWlhOMExXTnNkWE4wDQpaWEl1ZFhNdGMyOTFkR2d1WTI5dWRHRnBibVZ5Y3k1aGNIQmtiMjFoYVc0dVkyeHZkV1F4Q3pBSkJnTlZCQVlUDQpBbFZUTVJjd0ZRWURWUVFJRXc1T2IzSjBhQ0JEWVhKdmJHbHVZVEVRTUE0R0ExVUVCeE1IVW1Gc1pXbG5hREVNDQpNQW9HQTFVRUNoTURTVUpOTVJNd0VRWURWUVFMRXdwQ2JHOWphMk5vWVdsdU1JR2ZNQTBHQ1NxR1NJYjNEUUVCDQpBUVVBQTRHTkFEQ0JpUUtCZ1FEbnNvSHUzeE1KejRMZDRBWnFPd0hKeURWN2U5MlZGU0VpTTBCU0ltNkwxT3VjDQpWbHU3RkVUOHZuazhDMmhjQU9HRjg5dUVmQmdUYkg3UDFpUlhmZitUeVFqSzFVVkVHSlczUURDUE9heHVpYVRlDQpCNHNCeVJyWkFRV3grdU5wR0EvRUdoQzZtMTFlY3hsZGtNU0twTGFZY3MrUW16RzBiejI1YXY4R0Q4bWVmUUlEDQpBUUFCbzFNd1VUQlBCZ05WSFJFRVNEQkdna1J1TURBNE5UbGlMVzE1WTJFeExtbGljSFl5TFhSbGMzUXRZMngxDQpjM1JsY2k1MWN5MXpiM1YwYUM1amIyNTBZV2x1WlhKekxtRndjR1J2YldGcGJpNWpiRzkxWkRBTkJna3Foa2lHDQo5dzBCQVFVRkFBT0JnUURlcnI0ZHdPRmEzdk94VG1HY1ZQMmdXS1VIemQyaUdxSmxZb1hjUm41TWhuaGFFOGF2DQpneGRqMk1uVEtDVUpFZ1ZsSFk5R09ieXRyTFJmazJJbG5melJzT1JUQUF4Y0pSMjlrM0NHd2tGaEJXck90VmZuDQo5aCtsc3VOUldsL080YTIvQ0NMT2VOZzUwNXZiV0g4N2haUnRLL1ZjWGpWdGVKbUthdVBBaFZnOWZnPT0NCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0NCg==",
 				"tlsca_name": "ca-orderer",
 				"type": "fabric-ca",
-				"url2use": "http://localhost:8002/caproxy/https%3A%2F%2Fvaradvm1.rtp.raleigh.ibm.com%3A9054"
+				"url2use": "http://localhost:3000/caproxy/https%3A%2F%2Fvaradvm1.rtp.raleigh.ibm.com%3A9054"
 			},
 			{
 				"api_url": "grpcs://127.0.0.1:7050",
@@ -1698,7 +1698,7 @@
 				"tls_cert": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tDQpNSUlESnpDQ0FwQ2dBd0lCQWdJSmNSLzVBRVRwRzlLaE1BMEdDU3FHU0liM0RRRUJCUVVBTUlHcU1VMHdTd1lEDQpWUVFERTBSdU1EQTROVGxpTFcxNVkyRXhMbWxpY0hZeUxYUmxjM1F0WTJ4MWMzUmxjaTUxY3kxemIzVjBhQzVqDQpiMjUwWVdsdVpYSnpMbUZ3Y0dSdmJXRnBiaTVqYkc5MVpERUxNQWtHQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdUDQpEazV2Y25Sb0lFTmhjbTlzYVc1aE1SQXdEZ1lEVlFRSEV3ZFNZV3hsYVdkb01Rd3dDZ1lEVlFRS0V3TkpRazB4DQpFekFSQmdOVkJBc1RDa0pzYjJOclkyaGhhVzR3SGhjTk1qQXdNVEF5TVRVeE5USTRXaGNOTWpFd01UQXhNVFV4DQpOVEk0V2pDQnFqRk5NRXNHQTFVRUF4TkViakF3T0RVNVlpMXRlV05oTVM1cFluQjJNaTEwWlhOMExXTnNkWE4wDQpaWEl1ZFhNdGMyOTFkR2d1WTI5dWRHRnBibVZ5Y3k1aGNIQmtiMjFoYVc0dVkyeHZkV1F4Q3pBSkJnTlZCQVlUDQpBbFZUTVJjd0ZRWURWUVFJRXc1T2IzSjBhQ0JEWVhKdmJHbHVZVEVRTUE0R0ExVUVCeE1IVW1Gc1pXbG5hREVNDQpNQW9HQTFVRUNoTURTVUpOTVJNd0VRWURWUVFMRXdwQ2JHOWphMk5vWVdsdU1JR2ZNQTBHQ1NxR1NJYjNEUUVCDQpBUVVBQTRHTkFEQ0JpUUtCZ1FEbnNvSHUzeE1KejRMZDRBWnFPd0hKeURWN2U5MlZGU0VpTTBCU0ltNkwxT3VjDQpWbHU3RkVUOHZuazhDMmhjQU9HRjg5dUVmQmdUYkg3UDFpUlhmZitUeVFqSzFVVkVHSlczUURDUE9heHVpYVRlDQpCNHNCeVJyWkFRV3grdU5wR0EvRUdoQzZtMTFlY3hsZGtNU0twTGFZY3MrUW16RzBiejI1YXY4R0Q4bWVmUUlEDQpBUUFCbzFNd1VUQlBCZ05WSFJFRVNEQkdna1J1TURBNE5UbGlMVzE1WTJFeExtbGljSFl5TFhSbGMzUXRZMngxDQpjM1JsY2k1MWN5MXpiM1YwYUM1amIyNTBZV2x1WlhKekxtRndjR1J2YldGcGJpNWpiRzkxWkRBTkJna3Foa2lHDQo5dzBCQVFVRkFBT0JnUURlcnI0ZHdPRmEzdk94VG1HY1ZQMmdXS1VIemQyaUdxSmxZb1hjUm41TWhuaGFFOGF2DQpneGRqMk1uVEtDVUpFZ1ZsSFk5R09ieXRyTFJmazJJbG5melJzT1JUQUF4Y0pSMjlrM0NHd2tGaEJXck90VmZuDQo5aCtsc3VOUldsL080YTIvQ0NMT2VOZzUwNXZiV0g4N2haUnRLL1ZjWGpWdGVKbUthdVBBaFZnOWZnPT0NCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0NCg==",
 				"tlsca_name": "ca-orderer",
 				"type": "fabric-ca",
-				"url2use": "http://localhost:8002/caproxy/https%3A%2F%2Fvaradvm1.rtp.raleigh.ibm.com%3A9054"
+				"url2use": "http://localhost:3000/caproxy/https%3A%2F%2Fvaradvm1.rtp.raleigh.ibm.com%3A9054"
 			},
 			{
 				"admin_certs": [
@@ -1927,7 +1927,7 @@
 				],
 				"timestamp": 1596719682315,
 				"type": "fabric-ca",
-				"url2use": "http://localhost:8002/caproxy/https%3A%2F%2Fvaradvm1.rtp.raleigh.ibm.com%3A9054"
+				"url2use": "http://localhost:3000/caproxy/https%3A%2F%2Fvaradvm1.rtp.raleigh.ibm.com%3A9054"
 			},
 			{
 				"api_url": "grpcs://127.0.0.1:7050",

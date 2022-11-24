@@ -2524,7 +2524,7 @@ paths:
                             \"orgs2sign\": [
                               {
                                 \"msp_id\": \"Org1MSP\",
-                                \"optools_url\": \"http://localhost:8002/api/v2\",
+                                \"optools_url\": \"http://localhost:3000/api/v2\",
                                 \"timeout_ms\": 10000,
                                 \"signature\": \"\",
                                 \"admin\": false
@@ -2597,7 +2597,7 @@ paths:
                             \"orgs2sign\": [
                                 {
                                     \"msp_id\": \"Org1MSP\",
-                                    \"optools_url\": \"http://localhost:8002/api/v2\",
+                                    \"optools_url\": \"http://localhost:3000/api/v2\",
                                     \"signature\": \"<base 64 encoded signature here>\",
                                 }
                             ],
@@ -7673,7 +7673,7 @@ components:
         HOST_URL:
           type: string
           description: The external URL to reach the IBP console.
-          example: http://localhost:8002
+          example: http://localhost:3000
         IAM_CACHE_ENABLED:
           type: boolean
           description: If true an in memory cache will be used to interface with the IBM IAM (an authorization) service. [Only applies if IBP is running in IBM Cloud]
@@ -7703,7 +7703,7 @@ components:
           example: ibmcloud
         LANDING_URL:
           type: string
-          example: http://localhost:8002
+          example: http://localhost:3000
         LOGIN_URI:
           type: string
           example: /auth/login
@@ -8849,7 +8849,7 @@ components:
     SignatureOptools_url:
       type: string
       description: The url of the IBP console for this org. Include protocol, port, & hostname. Field is parsed during request distribution. The path/route to use during request distribution will be decided internally by the paths availability (`/api/v1/*` or `/api/v2/*`).
-      example: http://localhost:8002
+      example: http://localhost:3000
 
     SignatureSignature: # do not base64 validation to this field, for a ccd tx it will be a simple string
       type: string
@@ -9289,7 +9289,7 @@ components:
         url:
           type: string
           description: A api url to use to download the backup and see its progress.
-          example: http://localhost:8002/ak/api/v2/backups/03_ibp_db_backup_1592924104038
+          example: http://localhost:3000/ak/api/v2/backups/03_ibp_db_backup_1592924104038
 
     AttachBackupResponse:
       type: object
@@ -9322,7 +9322,7 @@ components:
         url:
           type: string
           description: A api url to use to checkup on the status of the restore.
-          example: http://localhost:8002/ak/api/v1/webhooks/txs/nboqur
+          example: http://localhost:3000/ak/api/v1/webhooks/txs/nboqur
 
     RestoreBackupDataBody:
       type: object
@@ -9353,7 +9353,7 @@ components:
         client_webhook_url:
           type: string
           description: Provide a webhook url. This url will receive a POST request when the restore is complete. Embedded basic auth supported.
-          example: http://localhost:8002/api/v1/example/webhooks/asdf"
+          example: http://localhost:3000/api/v1/example/webhooks/asdf"
 
     GetBackupResponse:
       type: object

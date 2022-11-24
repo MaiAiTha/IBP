@@ -374,7 +374,7 @@ describe('CouchDB from libs', () => {
 								tools.stubs.getDoc.restore();
 								tools.stubs.retry_req.callsArgWith(1, null, couch_objects.response);
 								const opts = {
-									url: 'http://localhost:8002',
+									url: 'http://localhost:3000',
 									db_name: 'test-db',
 									_id: 'test-id',
 									query: 'test-query'

@@ -26,7 +26,7 @@ This will show the details of a particular webhook doc.
 	"uuid": "asdf",
 
 	// where the webhook should post to when complete
-	"client_webhook_url": "http://localhost:8002",
+	"client_webhook_url": "http://localhost:3000",
 
 	// (optional) brief description of the transaction
 	"description": "building a template request",
@@ -149,7 +149,7 @@ This will return all template webhooks. Pending and completed.
 			"uuid": "asdf",
 
 			// where the webhook should post to when complete
-			"client_webhook_url": "http://localhost:8002",
+			"client_webhook_url": "http://localhost:3000",
 
 			// (optional) brief description of the transaction
 			"description": "building a template request",

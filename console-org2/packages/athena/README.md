@@ -92,10 +92,10 @@ crn_string: 'CRN_STRING_GOES_HERE'
 configtxlator_url_original: CONFIGTXLATOR_URL_GOES_HERE
 deployer_url: DEPLOYER_URL_GOES_HERE
 enforce_backend_ssl: false
-host_url: http://localhost:8002
+host_url: http://localhost:3000
 region: local
 proxy_tls_fabric_reqs: true
-proxy_tls_ws_url: http://localhost:8002
+proxy_tls_ws_url: http://localhost:3000
 proxy_tls_http_url: ./
 environment: dev
 ```
@@ -446,7 +446,7 @@ are included in the Athena repository as git submodules.
 	> npm start
 	```
 
-- Open your browser and go to the url defined in `HOST_URL` which is normally [http://localhost:8002](http://localhost:8002)
+- Open your browser and go to the url defined in `HOST_URL` which is normally [http://localhost:3000](http://localhost:3000)
 
 - Log in using the `initial_admin` and `default_user_password_initial` values from `my_config.yaml` for the username and password,
 respectively.  You will be asked to change your password.

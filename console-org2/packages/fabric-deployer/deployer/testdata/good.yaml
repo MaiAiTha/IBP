@@ -1,7 +1,7 @@
 db:
   connectionurl: "http://couchdb:5984"
   createdb: true
-  serviceinstances:
+  serviceinstances: 
     name: "dev_serviceinstances"
     designdocs:
   resourcebindings:
@@ -19,7 +19,7 @@ dashboardurl: "https://dashboard.url"
 
 catalog: "../../catalogs/en-us_catalog.json"
 
-port: 8081
+port: 8080
 
 loglevel: debug
 
@@ -33,7 +33,7 @@ crn:
   ctype: public
   servicename: blockchain
   location: us-south
-
+  
 deployerurl: "http://deployer.url"
 
 auth:

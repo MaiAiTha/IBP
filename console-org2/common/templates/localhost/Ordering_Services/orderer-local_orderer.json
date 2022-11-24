@@ -2,7 +2,7 @@
     "display_name": "ordering node - local",
     "grpcwp_url": "https://localhost:7445",
     "api_url": "grpcs://orderer.example.com:7050",
-    "operations_url": "http://localhost:9444",
+    "operations_url": "http://localhost:9443",
     "osnadmin_url": "https://localhost:7053",
     "type": "fabric-orderer",
     "msp_id": "OrdererMSP",

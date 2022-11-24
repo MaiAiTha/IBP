@@ -1,11 +1,11 @@
 {
 	"default_get_response": {
-		"configtxlator_url": "http://localhost:8002",
+		"configtxlator_url": "http://localhost:3000",
 		"auth_scheme": "initial",
 		"authenticated": false,
-		"host_url": "http://localhost:8002",
-		"login_uri": "http://localhost:8002",
-		"logout_uri": "http://localhost:8002",
+		"host_url": "http://localhost:3000",
+		"login_uri": "http://localhost:3000",
+		"logout_uri": "http://localhost:3000",
 		"admin_list": [],
 		"access_list": [],
 		"all_users": []
@@ -51,11 +51,11 @@
 		},
 		"auth_scheme": "appid",
 		"authenticated": true,
-		"configtxlator_url": "http://localhost:8002",
-		"host_url": "http://localhost:8002",
+		"configtxlator_url": "http://localhost:3000",
+		"host_url": "http://localhost:3000",
 		"id": 1,
-		"login_uri": "http://localhost:8002",
-		"logout_uri": "http://localhost:8002"
+		"login_uri": "http://localhost:3000",
+		"logout_uri": "http://localhost:3000"
 	},
 	"something": {
 		"access_list": [
@@ -92,18 +92,18 @@
 		},
 		"auth_scheme": "appid",
 		"authenticated": true,
-		"configtxlator_url": "http://localhost:8002",
-		"host_url": "http://localhost:8002",
+		"configtxlator_url": "http://localhost:3000",
+		"host_url": "http://localhost:3000",
 		"id": 1,
-		"login_uri": "http://localhost:8002",
-		"logout_uri": "http://localhost:8002"
+		"login_uri": "http://localhost:3000",
+		"logout_uri": "http://localhost:3000"
 	},
 	"ev_settings": {
 		"auth_scheme": "initial",
-		"host_url": "http://localhost:8002",
-		"configtxlator_url": "http://localhost:8002",
-		"login_uri": "http://localhost:8002",
-		"logout_uri": "http://localhost:8002",
+		"host_url": "http://localhost:3000",
+		"configtxlator_url": "http://localhost:3000",
+		"login_uri": "http://localhost:3000",
+		"logout_uri": "http://localhost:3000",
 		"admin_list": [
 			{
 				"email": "someone_else@us.ibm.com",
@@ -176,10 +176,10 @@
 		},
 		"auth_scheme": "appid",
 		"client_id": "client 1",
-		"configtxlator_url": "http://localhost:8002",
-		"host_url": "http://localhost:8002",
-		"login_uri": "http://localhost:8002",
-		"logout_uri": "http://localhost:8002",
+		"configtxlator_url": "http://localhost:3000",
+		"host_url": "http://localhost:3000",
+		"login_uri": "http://localhost:3000",
+		"logout_uri": "http://localhost:3000",
 		"oauth_url": "http://oauth_url.com",
 		"secret": "abcdef",
 		"tenant_id": "tenant 1"

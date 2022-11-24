@@ -1,7 +1,7 @@
 db:
   connectionurl: "http://couchdb:5984"
   createdb: false
-  serviceinstances:
+  serviceinstances: 
     name: "dev_serviceinstances"
     designdocs:
       - ./designdocs/serviceinstances/by_account.json
@@ -26,7 +26,7 @@ dashboardurl: "https://hyperion.stage1.ng.bluemix.net/welcome"
 
 catalog: "/catalogs/dev/en-us_catalog.json"
 
-port: 8081
+port: 8080
 
 loglevel: debug
 
@@ -40,7 +40,7 @@ crn:
   ctype: public
   servicename: blockchain
   location: us-south
-
+  
 deployerurl: "http://deployer.url"
 
 tls:

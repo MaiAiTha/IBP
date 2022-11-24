@@ -242,7 +242,7 @@
 			"short_name": "David",
 			"location": null,
 			"msp_id": "PeerOrg1",
-			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8081",
+			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8080",
 			"timestamp": 1539772893852,
 			"name": "David"
 		}
@@ -261,15 +261,15 @@
 				"protocol": "http:",
 				"slashes": true,
 				"auth": null,
-				"host": "istillneedthisvm.rtp.raleigh.ibm.com:8081",
-				"port": "8081",
+				"host": "istillneedthisvm.rtp.raleigh.ibm.com:8080",
+				"port": "8080",
 				"hostname": "istillneedthisvm.rtp.raleigh.ibm.com",
 				"hash": null,
 				"search": null,
 				"query": null,
 				"pathname": "/settings",
 				"path": "/settings",
-				"href": "http://istillneedthisvm.rtp.raleigh.ibm.com:8081/settings"
+				"href": "http://istillneedthisvm.rtp.raleigh.ibm.com:8080/settings"
 			},
 			"method": "GET",
 			"headers": {
@@ -285,7 +285,7 @@
 			"short_name": "David",
 			"location": null,
 			"msp_id": "PeerOrg1",
-			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8081",
+			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8080",
 			"timestamp": 1539772893852,
 			"name": "David",
 			"backend_addr": "dal-zbc04c.5.secure.blockchain.ibm.com:20407"
@@ -299,7 +299,7 @@
 			"short_name": "David",
 			"location": null,
 			"msp_id": "PeerOrg1",
-			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8081",
+			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8080",
 			"timestamp": 1539772893852,
 			"name": "David",
 			"backend_addr": "dal-zbc04c.5.secure.blockchain.ibm.com:20407"
@@ -313,7 +313,7 @@
 			"short_name": "David",
 			"location": null,
 			"msp_id": "PeerOrg1",
-			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8081",
+			"url": "http://istillneedthisvm.rtp.raleigh.ibm.com:8080",
 			"timestamp": 1539772893852,
 			"name": "David",
 			"backend_addr": null

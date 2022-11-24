@@ -50,9 +50,9 @@ For cases when a user wants to minimize charges without stopping or deleting a n
 
 The **Resource allocation** panel in the console provides default values for the various fields that are involved in creating a node. These values are chosen because they represent a good way to get started. However, every use case is different. While this topic provides guidance for ways to think about these values, it ultimately falls to the user to monitor their nodes and find sizings that work for them. Therefore, barring situations in which users are certain that they need values different from the defaults, a practical strategy is to use these defaults at first and adjust them later.
 
-All of the containers that are associated with a node have **CPU** and **memory**, while certain containers that are associated with the peer, ordering node, and CA also have **storage**.
+All of the containers that are associated with a node have **CPU** and **memory**, while certain containers that are associated with the peer, ordering node, and CA also have **storage**. 
 
->**_NOTE:_** You are responsible for monitoring your CPU, memory, and storage consumption in your cluster. If you do happen to request more resources for a fabric node than are available, the node will not start. However, existing nodes will not be affected.
+>**_NOTE:_** You are responsible for monitoring your CPU, memory, and storage consumption in your cluster. If you do happen to request more resources for a fabric node than are available, the node will not start. However, existing nodes will not be affected. 
 
 Every node has a gRPC web proxy container that bootstraps the communication layer between the console and a node. This container has fixed resource values and is included on the Resource allocation panel to provide an accurate estimate of how much space is required on your cluster in order for the node to deploy. Because the values for this container cannot be changed, we will not discuss the gRPC web proxy in the following sections.
 
@@ -229,7 +229,7 @@ You can use the console to configure resource allocation or the CA database and 
 		}
 	}
 }
-```
+```        
 
 #### Providing your own customizations when you create a CA
 
@@ -522,9 +522,9 @@ This support for rich queries is why **CouchDB is the default database** unless 
 
 If your cluster is configured across multiple zones, when you deploy a peer you have the option of selecting which zone the peer is deployed to. Check the Advanced deployment option that is labeled **Deployment zone selection** to see the list of zones that is currently configured for your cluster.
 
-If you are deploying a redundant node (that is, another peer when you already have one), it is a best practice to deploy this node into a different zone. You can determine the zone that the other node was deployed to by opening the tile of the node and looking under the Node location. Alternatively, you can use the APIs to deploy a peer or orderer to a specific zone.
+If you are deploying a redundant node (that is, another peer when you already have one), it is a best practice to deploy this node into a different zone. You can determine the zone that the other node was deployed to by opening the tile of the node and looking under the Node location. Alternatively, you can use the APIs to deploy a peer or orderer to a specific zone. 
 
-If **multizone-capable storage** is configured for your cluster, when a zone failure occurs, the nodes can come up in another zone with their associated storage intact, ensuring high availability of the node. In order to leverage this capability with the Fabric  Operatons Console, you need to configure your cluster to use **SDS (Portworx)** storage. And when you deploy a peer, select the advanced deployment option labeled **Deployment zone selection** and then select **Across all zones**.
+If **multizone-capable storage** is configured for your cluster, when a zone failure occurs, the nodes can come up in another zone with their associated storage intact, ensuring high availability of the node. In order to leverage this capability with the Fabric  Operatons Console, you need to configure your cluster to use **SDS (Portworx)** storage. And when you deploy a peer, select the advanced deployment option labeled **Deployment zone selection** and then select **Across all zones**. 
 
 ### Sizing a peer during creation
 
@@ -533,7 +533,7 @@ The peer pod has four containers that can be adjusted:
 - **Peer container**: Encapsulates the internal peer processes (such as validating transactions) and the fabric (in other words, the transaction history) for all of the channels it belongs to. Note that the storage of the peer also includes the smart contracts that are installed on the peer.
 - **CouchDB container**: Where the state databases of the peer are stored. Recall that each channel has a distinct state database.
 - **Smart contract container**: Recall that during a transaction, the relevant smart contract is "invoked" (in other words, run). Note that all smart contracts that you install on the peer will run in a separate container inside your peer pod, which is known as a Docker-in-Docker container.
-- **Smart contract launcher container**: Used to launch a separate pod for each smart contract, eliminating the need for a Docker-in-Docker container in the peer pod. Note that the smart contract launcher container is not where smart contracts actually run, and is therefore given a smaller default resource than the "smart contracts" container that used to be deployed along with a peer. It only exists to help create the pods where smart contracts run. You must make your own allowances in your deployment for the containers for smart contracts, as the pods spun up by the smart contract launcher are not bound by strict resource limitations. The pod will use as many resources as it needs depending on the size of a smart contract and the processing load it encounters.
+- **Smart contract launcher container**: Used to launch a separate pod for each smart contract, eliminating the need for a Docker-in-Docker container in the peer pod. Note that the smart contract launcher container is not where smart contracts actually run, and is therefore given a smaller default resource than the "smart contracts" container that used to be deployed along with a peer. It only exists to help create the pods where smart contracts run. You must make your own allowances in your deployment for the containers for smart contracts, as the pods spun up by the smart contract launcher are not bound by strict resource limitations. The pod will use as many resources as it needs depending on the size of a smart contract and the processing load it encounters. 
 
 >**_IMPORTANT:_** Note that a separate pod will be created for each smart contract that is installed on each peer, even if you have multiple peers on the same channel that have all installed the same smart contract. So if you have three peers on a channel, and install a smart contract on each one, you will have three smart contract pods running. However, if these three peers are on more than one channel using the **exact same** smart contract, you will still only have three pods running. These smart contract pods will not be deleted if you delete the peer. You must delete them **separately**.
 
@@ -690,7 +690,7 @@ A common use case would be to override some of the default timeouts, or peer pri
 		}
 	}
 }
-```
+```        
 
 #### Providing your own customizations when you create a peer
 
@@ -709,7 +709,7 @@ You don't need to include the entire set of available parameters in the `JSON`, 
   },
   "metrics": {
     "statsd": {
-      "address": "127.0.0.1:9444"
+      "address": "127.0.0.1:9443"
     }
   }
 }
@@ -866,9 +866,9 @@ However many nodes a user chooses to deploy, they have the ability to add more n
 
 If your cluster is configured across multiple zones, when you deploy an ordering node you have the option of selecting which zone the node is deployed to. Check the Advanced deployment option that is labeled **Deployment zone selection** to see the list of zones that is currently configured for your cluster.
 
-For a five node ordering service, these nodes will be distributed into multiple zones by default, depending on the relative space available in each zone. You also have the ability to distribute a five node ordering service yourself by clearing the default option to have the zones that are chosen for you and distributing these nodes into the zones you have available. You can check which zone a node was deployed to by opening the tile of the node and looking under the Node location. Alternatively, you can use the APIs to deploy an ordering node to a specific zone.
+For a five node ordering service, these nodes will be distributed into multiple zones by default, depending on the relative space available in each zone. You also have the ability to distribute a five node ordering service yourself by clearing the default option to have the zones that are chosen for you and distributing these nodes into the zones you have available. You can check which zone a node was deployed to by opening the tile of the node and looking under the Node location. Alternatively, you can use the APIs to deploy an ordering node to a specific zone. 
 
-If **multizone-capable storage** is configured for your cluster when a zone failure occurs, the nodes can come up in another zone, with their associated storage intact, ensuring high availability of the node. In order to leverage this capability with the Fabric  Operatons Console, you need to configure your cluster to use **SDS (Portworx)** storage. And when you deploy an ordering service or an ordering node, select the advanced deployment option labeled **Deployment zone selection** and then select **Across all zones**.
+If **multizone-capable storage** is configured for your cluster when a zone failure occurs, the nodes can come up in another zone, with their associated storage intact, ensuring high availability of the node. In order to leverage this capability with the Fabric  Operatons Console, you need to configure your cluster to use **SDS (Portworx)** storage. And when you deploy an ordering service or an ordering node, select the advanced deployment option labeled **Deployment zone selection** and then select **Across all zones**. 
 
 ### Sizing an ordering node during creation
 
@@ -933,7 +933,7 @@ The need to customize the ordering node configuration is less common than the pe
 		}
 	}
 }
-```
+```        
 
 #### Providing your own customizations when you create an ordering service
 
@@ -958,7 +958,7 @@ You don't need to include the entire set of available parameters in the `JSON`, 
 }
 ```
 
-#### Modifying ordering node settings after deployment>**_NOTE:_**
+#### Modifying ordering node settings after deployment>**_NOTE:_** 
 
 After an ordering node is deployed, a subset of the fields can be updated as well. Click the ordering service tile in the console and select the ordering node, then click the **Settings** icon to open a side panel where you can modify the `JSON`.  The `JSON` in the **Current configuration** box contains the current settings for the ordering node. **Not all of these values can be overridden after deployment.** Again, you don't need to include the entire set of parameters from the **Current configuration** `JSON`, only paste the parameters you want to override into the **Configuration JSON** box.
 
@@ -1005,3 +1005,7 @@ Paste the modified `JSON` that contains only the parameters that you want to upd
 ```
 
 >**_NOTE:_** The ability to update an ordering node configuration is not available for ordering nodes that have been imported into the console.
+
+
+
+

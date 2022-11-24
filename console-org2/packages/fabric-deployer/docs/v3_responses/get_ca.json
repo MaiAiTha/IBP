@@ -239,7 +239,7 @@
                 }
             },
             "operations": {
-                "listenaddress": "0.0.0.0:9444",
+                "listenaddress": "0.0.0.0:9443",
                 "metrics": {},
                 "tls": {
                     "enabled": true,
@@ -404,7 +404,7 @@
                 }
             },
             "operations": {
-                "listenaddress": "0.0.0.0:9444",
+                "listenaddress": "0.0.0.0:9443",
                 "metrics": {},
                 "tls": {
                     "enabled": true

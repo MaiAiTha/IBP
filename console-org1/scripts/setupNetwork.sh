@@ -5,7 +5,7 @@ FABRIC_VERSION="2.2.3"
 CA_VERSION="1.5.2"
 
 function networkUp() {
-	#networkDown
+	networkDown
 	cd $SRC_DIR/..
 	curl -sSL https://bit.ly/2ysbOFE | bash -s -- ${FABRIC_VERSION} ${CA_VERSION}
 	cd fabric-samples

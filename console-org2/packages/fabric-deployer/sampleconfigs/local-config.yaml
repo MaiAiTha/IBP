@@ -11,7 +11,7 @@ db:
       - ./designdocs/components/plutus.json
       - ./designdocs/components/search_indices.json
 
-port: 8081
+port: 8080
 
 loglevel: debug
 
@@ -165,3 +165,4 @@ serviceConfig:
 timeouts:
   componentDeploy: 10000
   apiServer: 100000
+

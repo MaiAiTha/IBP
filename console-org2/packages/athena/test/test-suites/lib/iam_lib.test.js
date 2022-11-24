@@ -470,7 +470,7 @@ describe('IAM Lib', () => {
 								common.ev.CRN = {};
 								common.ev.CRN.instance_id = 'instance_id';
 								const opts = {
-									url: 'http://localhost:8002',
+									url: 'http://localhost:3000',
 									authorizations: [{ action: common.ev.STR.CREATE_ACTION, id: 'abcd' }],
 									users_iam_token: iam_objects.users_iam_token,
 									SKIP_CACHE: true
@@ -509,7 +509,7 @@ describe('IAM Lib', () => {
 								common.ev.CRN = {};
 								common.ev.CRN.instance_id = 'instance_id';
 								const opts = {
-									url: 'http://localhost:8002',
+									url: 'http://localhost:3000',
 									authorizations: [{ action: common.ev.STR.CREATE_ACTION, id: 'abcd' }],
 									users_iam_token: iam_objects.users_iam_token,
 									SKIP_CACHE: true
@@ -532,7 +532,7 @@ describe('IAM Lib', () => {
 								common.ev.CRN = {};
 								common.ev.CRN.instance_id = 'instance_id';
 								const opts = {
-									url: 'http://localhost:8002',
+									url: 'http://localhost:3000',
 									authorizations: [{ action: common.ev.STR.CREATE_ACTION, id: 'abcd' }],
 									users_iam_token: iam_objects.users_iam_token,
 									SKIP_CACHE: true
@@ -555,7 +555,7 @@ describe('IAM Lib', () => {
 								common.ev.CRN = {};
 								common.ev.CRN.instance_id = 'instance_id';
 								const opts = {
-									url: 'http://localhost:8002',
+									url: 'http://localhost:3000',
 									authorizations: [{ action: common.ev.STR.CREATE_ACTION, id: 'abcd' }],
 									users_iam_token: iam_objects.users_iam_token,
 									SKIP_CACHE: true,
@@ -581,7 +581,7 @@ describe('IAM Lib', () => {
 								common.ev.CRN = {};
 								common.ev.CRN.instance_id = 'instance_id';
 								const opts = {
-									url: 'http://localhost:8002',
+									url: 'http://localhost:3000',
 									authorizations: [{ action: common.ev.STR.CREATE_ACTION, id: 'abcd' }],
 									users_iam_token: iam_objects.users_iam_token,
 									SKIP_CACHE: true,
@@ -943,7 +943,7 @@ describe('IAM Lib', () => {
 								common.ev.CRN = {};
 								common.ev.CRN.instance_id = 'instance_id';
 								const opts = {
-									url: 'http://localhost:8002',
+									url: 'http://localhost:3000',
 									authorizations: [{ action: common.ev.STR.CREATE_ACTION, id: 'abcd' }],
 									users_iam_token: iam_objects.users_iam_token,
 									SKIP_CACHE: true,
@@ -971,7 +971,7 @@ describe('IAM Lib', () => {
 								common.ev.CRN = {};
 								common.ev.CRN.instance_id = 'instance_id';
 								const opts = {
-									url: 'http://localhost:8002',
+									url: 'http://localhost:3000',
 									authorizations: [{ action: common.ev.STR.CREATE_ACTION, id: 'abcd' }],
 									users_iam_token: iam_objects.users_iam_token,
 									SKIP_CACHE: true,

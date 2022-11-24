@@ -1,0 +1,40 @@
+name: Common CI
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  audit:
+    name: Audit ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: [apollo, athena, stitch]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - name: Audit NPM
+        run: npm audit --production
+        working-directory: ./packages/${{ matrix.project }}
+        continue-on-error: true
+
+  detect-secrets:
+    name: Detect Secrets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.6
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - name: Install detect-secrets
+        run: pip install --upgrade git+https://github.com/ibm/detect-secrets.git@0.13.1+ibm.52.dss#egg=detect-secrets
+      - name: Install Lerna
+        run: npm install -g lerna
+      - name: Run detect-secrets
+        run: lerna run detect-secrets --stream

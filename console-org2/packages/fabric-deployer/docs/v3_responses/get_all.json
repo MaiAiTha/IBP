@@ -240,7 +240,7 @@
                     }
                 },
                 "operations": {
-                    "listenaddress": "0.0.0.0:9444",
+                    "listenaddress": "0.0.0.0:9443",
                     "metrics": {},
                     "tls": {
                         "enabled": true,
@@ -405,7 +405,7 @@
                     }
                 },
                 "operations": {
-                    "listenaddress": "0.0.0.0:9444",
+                    "listenaddress": "0.0.0.0:9443",
                     "metrics": {},
                     "tls": {
                         "enabled": true
@@ -664,7 +664,7 @@
                     }
                 },
                 "operations": {
-                    "listenaddress": "0.0.0.0:9444",
+                    "listenaddress": "0.0.0.0:9443",
                     "metrics": {},
                     "tls": {
                         "enabled": true,
@@ -829,7 +829,7 @@
                     }
                 },
                 "operations": {
-                    "listenaddress": "0.0.0.0:9444",
+                    "listenaddress": "0.0.0.0:9443",
                     "metrics": {},
                     "tls": {
                         "enabled": true
@@ -1088,7 +1088,7 @@
                     }
                 },
                 "operations": {
-                    "listenaddress": "0.0.0.0:9444",
+                    "listenaddress": "0.0.0.0:9443",
                     "metrics": {},
                     "tls": {
                         "enabled": true,
@@ -1253,7 +1253,7 @@
                     }
                 },
                 "operations": {
-                    "listenaddress": "0.0.0.0:9444",
+                    "listenaddress": "0.0.0.0:9443",
                     "metrics": {},
                     "tls": {
                         "enabled": true
@@ -2895,7 +2895,7 @@
                 "installTimeout": "10m0s"
             },
             "operations": {
-                "listenAddress": "127.0.0.1:9444",
+                "listenAddress": "127.0.0.1:9443",
                 "tls": {
                     "key": {},
                     "cert": {},
@@ -3244,7 +3244,7 @@
                 "installTimeout": "10m0s"
             },
             "operations": {
-                "listenAddress": "127.0.0.1:9444",
+                "listenAddress": "127.0.0.1:9443",
                 "tls": {
                     "key": {},
                     "cert": {},

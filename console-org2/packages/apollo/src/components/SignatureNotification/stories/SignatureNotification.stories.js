@@ -37,7 +37,7 @@ function buildParameters(notification) {
 	});
 	let received = null;
 	notification.orgs2sign.forEach(entry => {
-		if (entry.optools_url === 'http://localhost:8002/api/v1') {
+		if (entry.optools_url === 'http://localhost:3000/api/v1') {
 			if (!received || (received.signature && !entry.signature)) {
 				received = entry;
 			}

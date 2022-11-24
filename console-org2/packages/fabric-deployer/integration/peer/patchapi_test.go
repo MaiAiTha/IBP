@@ -106,7 +106,7 @@ var _ = Describe("Patch APIs", func() {
 			body, err := json.Marshal(createPeerReq)
 			Expect(err).NotTo(HaveOccurred())
 
-			req, err := http.NewRequest(http.MethodPost, "http://localhost:8081/api/v2/instance/testsid/type/peer/component/peer1", bytes.NewBuffer(body))
+			req, err := http.NewRequest(http.MethodPost, "http://localhost:8080/api/v2/instance/testsid/type/peer/component/peer1", bytes.NewBuffer(body))
 			Expect(err).NotTo(HaveOccurred())
 
 			do(req)
@@ -133,7 +133,7 @@ var _ = Describe("Patch APIs", func() {
 			body, err := json.Marshal(updateReq)
 			Expect(err).NotTo(HaveOccurred())
 
-			req, err := http.NewRequest(http.MethodPatch, "http://localhost:8081/api/v3/instance/testsid/type/peer/component/peer1/actions", bytes.NewBuffer(body))
+			req, err := http.NewRequest(http.MethodPatch, "http://localhost:8080/api/v3/instance/testsid/type/peer/component/peer1/actions", bytes.NewBuffer(body))
 			Expect(err).NotTo(HaveOccurred())
 
 			do(req)
@@ -172,7 +172,7 @@ var _ = Describe("Patch APIs", func() {
 			body, err := json.Marshal(updateReq)
 			Expect(err).NotTo(HaveOccurred())
 
-			req, err := http.NewRequest(http.MethodPatch, "http://localhost:8081/api/v3/instance/testsid/type/peer/component/peer1/resources", bytes.NewBuffer(body))
+			req, err := http.NewRequest(http.MethodPatch, "http://localhost:8080/api/v3/instance/testsid/type/peer/component/peer1/resources", bytes.NewBuffer(body))
 			Expect(err).NotTo(HaveOccurred())
 
 			do(req)
@@ -257,7 +257,7 @@ var _ = Describe("Patch APIs", func() {
 			body, err := json.Marshal(updateReq)
 			Expect(err).NotTo(HaveOccurred())
 
-			req, err := http.NewRequest(http.MethodPatch, "http://localhost:8081/api/v3/instance/testsid/type/peer/component/peer1/config", bytes.NewBuffer(body))
+			req, err := http.NewRequest(http.MethodPatch, "http://localhost:8080/api/v3/instance/testsid/type/peer/component/peer1/config", bytes.NewBuffer(body))
 			Expect(err).NotTo(HaveOccurred())
 
 			do(req)
@@ -300,7 +300,7 @@ var _ = Describe("Patch APIs", func() {
 			body, err := json.Marshal(updateReq)
 			Expect(err).NotTo(HaveOccurred())
 
-			req, err := http.NewRequest(http.MethodPatch, "http://localhost:8081/api/v3/instance/testsid/type/peer/component/peer1/crypto", bytes.NewBuffer(body))
+			req, err := http.NewRequest(http.MethodPatch, "http://localhost:8080/api/v3/instance/testsid/type/peer/component/peer1/crypto", bytes.NewBuffer(body))
 			Expect(err).NotTo(HaveOccurred())
 
 			do(req)
@@ -382,7 +382,7 @@ var _ = Describe("Patch APIs", func() {
 				body, err := json.Marshal(updateReq)
 				Expect(err).NotTo(HaveOccurred())
 
-				req, err := http.NewRequest(http.MethodPatch, "http://localhost:8081/api/v3/instance/testsid/type/peer/component/peer1/nodeou", bytes.NewBuffer(body))
+				req, err := http.NewRequest(http.MethodPatch, "http://localhost:8080/api/v3/instance/testsid/type/peer/component/peer1/nodeou", bytes.NewBuffer(body))
 				Expect(err).NotTo(HaveOccurred())
 
 				do(req)
@@ -440,7 +440,7 @@ var _ = Describe("Patch APIs", func() {
 				body, err := json.Marshal(updateReq)
 				Expect(err).NotTo(HaveOccurred())
 
-				req, err := http.NewRequest(http.MethodPatch, "http://localhost:8081/api/v3/instance/testsid/type/peer/component/peer1/all", bytes.NewBuffer(body))
+				req, err := http.NewRequest(http.MethodPatch, "http://localhost:8080/api/v3/instance/testsid/type/peer/component/peer1/all", bytes.NewBuffer(body))
 				Expect(err).NotTo(HaveOccurred())
 
 				do(req)
