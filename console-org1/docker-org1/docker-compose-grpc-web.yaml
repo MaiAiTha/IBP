@@ -23,7 +23,7 @@ services:
     volumes:
       - ../fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls:/certs/tls
     ports:
-        - "7443:7443"
+        - "7143:7143"
     networks:
         - test
 
@@ -46,7 +46,7 @@ services:
     volumes:
       - ../fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls:/certs/tls
     ports:
-    - "7444:7444"
+    - "7144:7144"
     networks:
         - test
 
@@ -68,6 +68,6 @@ services:
     volumes:
       - ../fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/tls:/certs/tls
     ports:
-    - "7445:7445"
+    - "7145:7145"
     networks:
         - test
