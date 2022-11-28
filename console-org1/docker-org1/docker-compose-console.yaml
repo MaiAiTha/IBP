@@ -35,7 +35,7 @@ services:
             - COUCHDB_USER=admin
             - COUCHDB_PASSWORD=password
         volumes:
-            - "couch-data:/opt/couchdb/data"
+            - "couch-data:/opt/couchdb/data1"
         ports:
             - "5185:5984"
         networks:
