@@ -73,7 +73,7 @@
 				"unique_name": false
 			}
 		},
-		"host_url": "http://localhost:3100",
+		"host_url": "http://localhost:3000",
 		"http_timeout": 120000,
 		"ibmid": {
 			"client_id": "username",
@@ -87,7 +87,7 @@
 		"message_type": "settings_doc_update",
 		"proxy_tls_fabric_reqs": false,
 		"proxy_tls_http_url": null,
-		"proxy_tls_ws_url": "http://localhost:3100",
+		"proxy_tls_ws_url": "http://localhost:3000",
 		"region": "local",
 		"session_secret": "ohnoididnotchangethepassword",
 		"system_channel_id": "testchainid",
@@ -169,7 +169,7 @@
 				"unique_name": false
 			}
 		},
-		"host_url": "http://localhost:3100",
+		"host_url": "http://localhost:3000",
 		"http_timeout": 120000,
 		"ibmid": {
 			"client_id": "username",
@@ -183,7 +183,7 @@
 		"message_type": "settings_doc_update",
 		"proxy_tls_fabric_reqs": false,
 		"proxy_tls_http_url": null,
-		"proxy_tls_ws_url": "http://localhost:3100",
+		"proxy_tls_ws_url": "http://localhost:3000",
 		"region": "local",
 		"session_secret": "ohnoididnotchangethepassword",
 		"system_channel_id": "testchainid",

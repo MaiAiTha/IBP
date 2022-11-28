@@ -15,7 +15,7 @@ services:
       - BACKEND_TLS_CA_FILES=/certs/tls/ca.crt
       - SERVER_BIND_ADDRESS=0.0.0.0
       - SERVER_HTTP_DEBUG_PORT=8080
-      - SERVER_HTTP_TLS_PORT=7143
+      - SERVER_HTTP_TLS_PORT=7443
       - BACKEND_TLS=true
       - SERVER_HTTP_MAX_WRITE_TIMEOUT=5m
       - SERVER_HTTP_MAX_READ_TIMEOUT=5m
@@ -23,12 +23,12 @@ services:
     volumes:
       - ../fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls:/certs/tls
     ports:
-        - "7143:7143"
+        - "7143:7443"
     networks:
         - test
 
   proxy.peer0.org2.example.com:
-    container_name: proxy.peer0.org2.example.com
+    container_name: proxy.peer0.org2.example.com 
     image: ghcr.io/hyperledger-labs/grpc-web:latest
     environment:
       - LICENSE=accept
@@ -38,7 +38,7 @@ services:
       - BACKEND_TLS_CA_FILES=/certs/tls/ca.crt
       - SERVER_BIND_ADDRESS=0.0.0.0
       - SERVER_HTTP_DEBUG_PORT=8081
-      - SERVER_HTTP_TLS_PORT=7144
+      - SERVER_HTTP_TLS_PORT=7444
       - BACKEND_TLS=true
       - SERVER_HTTP_MAX_WRITE_TIMEOUT=5m
       - SERVER_HTTP_MAX_READ_TIMEOUT=5m
@@ -46,7 +46,7 @@ services:
     volumes:
       - ../fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls:/certs/tls
     ports:
-    - "7144:7144"
+    - "7144:7444"
     networks:
         - test
 
@@ -60,7 +60,7 @@ services:
       - BACKEND_TLS_CA_FILES=/certs/tls/ca.crt
       - SERVER_BIND_ADDRESS=0.0.0.0
       - SERVER_HTTP_DEBUG_PORT=8082
-      - SERVER_HTTP_TLS_PORT=7145
+      - SERVER_HTTP_TLS_PORT=7445
       - BACKEND_TLS=true
       - SERVER_HTTP_MAX_WRITE_TIMEOUT=5m
       - SERVER_HTTP_MAX_READ_TIMEOUT=5m
@@ -68,6 +68,6 @@ services:
     volumes:
       - ../fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/tls:/certs/tls
     ports:
-    - "7145:7145"
+    - "7145:7445"
     networks:
         - test

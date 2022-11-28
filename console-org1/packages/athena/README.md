@@ -76,7 +76,7 @@ Create a file called `dev.json` in the `env` directory with the following conten
 
 ```json
 {
-    "DB_CONNECTION_STRING": "http://localhost:5184",
+    "DB_CONNECTION_STRING": "http://localhost:5984",
     "DB_SYSTEM": "athena_system",
     "CONFIGURE_FILE": "./env/my_config.yaml"
 }
@@ -92,10 +92,10 @@ crn_string: 'CRN_STRING_GOES_HERE'
 configtxlator_url_original: CONFIGTXLATOR_URL_GOES_HERE
 deployer_url: DEPLOYER_URL_GOES_HERE
 enforce_backend_ssl: false
-host_url: http://localhost:3100
+host_url: http://localhost:3000
 region: local
 proxy_tls_fabric_reqs: true
-proxy_tls_ws_url: http://localhost:3100
+proxy_tls_ws_url: http://localhost:3000
 proxy_tls_http_url: ./
 environment: dev
 ```
@@ -380,7 +380,7 @@ Of course, you can use whatever CouchDB service you want, as long as you update 
 you can choose your own username and password but you would need to update your `my_config.yaml`
 
 > The `-p 5984:5984` flag is what allows the Athena instance on your laptop to connect to the CouchDB service inside the
-container by hitting `localhost:5184`
+container by hitting `localhost:5984`
 
 > The `-v $PWD/couchdb:/opt/couchdb/data` flag will cause the CouchDB service to persist it's records in `$PWD/couchdb`.
 This gives you the ability to save Athena's database records should you need to restart the couchdb container.
@@ -425,7 +425,7 @@ are included in the Athena repository as git submodules.
     ```
     > cat env/dev.json
     {
-        "DB_CONNECTION_STRING": "http://localhost:5184",
+        "DB_CONNECTION_STRING": "http://localhost:5984",
         "DB_SYSTEM": "athena_system",
         "CONFIGURE_FILE": "./env/my_config.yaml"
     }
@@ -446,7 +446,7 @@ are included in the Athena repository as git submodules.
 	> npm start
 	```
 
-- Open your browser and go to the url defined in `HOST_URL` which is normally [http://localhost:3100](http://localhost:3100)
+- Open your browser and go to the url defined in `HOST_URL` which is normally [http://localhost:3000](http://localhost:3000)
 
 - Log in using the `initial_admin` and `default_user_password_initial` values from `my_config.yaml` for the username and password,
 respectively.  You will be asked to change your password.

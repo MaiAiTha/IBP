@@ -6207,16 +6207,16 @@ paths:
                           enabled: true
                           level: silly
                           unique_name: false
-                    HOST_URL: 'http://localhost:3100'
+                    HOST_URL: 'http://localhost:3000'
                     IAM_CACHE_ENABLED: true
                     IAM_URL: '-'
-                    IBM_ID_CALLBACK_URL: 'http://localhost:3100/auth/login'
+                    IBM_ID_CALLBACK_URL: 'http://localhost:3000/auth/login'
                     IGNORE_CONFIG_FILE: true
                     INACTIVITY_TIMEOUTS:
                       enabled: true
                       max_idle_time: 60000
                     INFRASTRUCTURE: ibmcloud
-                    LANDING_URL: 'http://localhost:3100'
+                    LANDING_URL: 'http://localhost:3000'
                     LOGIN_URI: /auth/login
                     LOGOUT_URI: /auth/logout
                     MAX_REQ_PER_MIN: 25
@@ -6225,8 +6225,8 @@ paths:
                     PORT: 3000
                     PROXY_CACHE_ENABLED: true
                     PROXY_TLS_FABRIC_REQS: always
-                    PROXY_TLS_HTTP_URL: 'http://localhost:3100'
-                    PROXY_TLS_WS_URL: 'http://localhost:3100'
+                    PROXY_TLS_HTTP_URL: 'http://localhost:3000'
+                    PROXY_TLS_WS_URL: 'http://localhost:3000'
                     REGION: us_south
                     SESSION_CACHE_ENABLED: true
                     TIMEOUTS: {}
@@ -6511,16 +6511,16 @@ paths:
                           enabled: true
                           level: silly
                           unique_name: false
-                    HOST_URL: 'http://localhost:3100'
+                    HOST_URL: 'http://localhost:3000'
                     IAM_CACHE_ENABLED: true
                     IAM_URL: '-'
-                    IBM_ID_CALLBACK_URL: 'http://localhost:3100/auth/login'
+                    IBM_ID_CALLBACK_URL: 'http://localhost:3000/auth/login'
                     IGNORE_CONFIG_FILE: true
                     INACTIVITY_TIMEOUTS:
                       enabled: true
                       max_idle_time: 60000
                     INFRASTRUCTURE: ibmcloud
-                    LANDING_URL: 'http://localhost:3100'
+                    LANDING_URL: 'http://localhost:3000'
                     LOGIN_URI: /auth/login
                     LOGOUT_URI: /auth/logout
                     MAX_REQ_PER_MIN: 25
@@ -6529,8 +6529,8 @@ paths:
                     PORT: '3000'
                     PROXY_CACHE_ENABLED: true
                     PROXY_TLS_FABRIC_REQS: always
-                    PROXY_TLS_HTTP_URL: 'http://localhost:3100'
-                    PROXY_TLS_WS_URL: 'http://localhost:3100'
+                    PROXY_TLS_HTTP_URL: 'http://localhost:3000'
+                    PROXY_TLS_WS_URL: 'http://localhost:3000'
                     REGION: us_south
                     SESSION_CACHE_ENABLED: true
                     TIMEOUTS: {}
@@ -7210,7 +7210,7 @@ paths:
                           - admin: true
                             certificate: >-
                               LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCkNlcnQgZGF0YSB3b3VsZCBiZSBoZXJlIGlmIHRoaXMgd2FzIHJlYWwKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
-                            optools_url: 'http://localhost:3100'
+                            optools_url: 'http://localhost:3000'
                             package_id: >-
                               marbles_1:92321c359d1efcd65dc34c6ee334e37870a4a2130889473173fad3ddf7c02249
                             peers:
@@ -7224,7 +7224,7 @@ paths:
                           - admin: true
                             certificate: >-
                               LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCkNlcnQgZGF0YSB3b3VsZCBiZSBoZXJlIGlmIHRoaXMgd2FzIHJlYWwKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
-                            optools_url: 'http://localhost:3100'
+                            optools_url: 'http://localhost:3000'
                             package_id: >-
                               marbles_1:92321c359d1efcd65dc34c6ee334e37870a4a2130889473173fad3ddf7c02249
                             peers:
@@ -7298,7 +7298,7 @@ paths:
                             \"orgs2sign\": [
                               {
                                 \"msp_id\": \"Org1MSP\",
-                                \"optools_url\": \"http://localhost:3100/api/v3\",
+                                \"optools_url\": \"http://localhost:3000/api/v3\",
                                 \"timeout_ms\": 10000,
                                 \"signature\": \"\",
                                 \"admin\": false
@@ -7371,7 +7371,7 @@ paths:
                       - admin: true
                         certificate: >-
                           LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCkNlcnQgZGF0YSB3b3VsZCBiZSBoZXJlIGlmIHRoaXMgd2FzIHJlYWwKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
-                        optools_url: 'http://localhost:3100'
+                        optools_url: 'http://localhost:3000'
                         package_id: >-
                           marbles_1:92321c359d1efcd65dc34c6ee334e37870a4a2130889473173fad3ddf7c02249
                         peers:
@@ -7385,7 +7385,7 @@ paths:
                       - admin: true
                         certificate: >-
                           LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCkNlcnQgZGF0YSB3b3VsZCBiZSBoZXJlIGlmIHRoaXMgd2FzIHJlYWwKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
-                        optools_url: 'http://localhost:3100'
+                        optools_url: 'http://localhost:3000'
                         package_id: >-
                           marbles_1:92321c359d1efcd65dc34c6ee334e37870a4a2130889473173fad3ddf7c02249
                         peers:
@@ -7448,7 +7448,7 @@ paths:
                             \"orgs2sign\": [
                                 {
                                     \"msp_id\": \"Org1MSP\",
-                                    \"optools_url\": \"http://localhost:3100/api/v3\",
+                                    \"optools_url\": \"http://localhost:3000/api/v3\",
                                     \"signature\": \"<base 64 encoded signature here>\",
                                 }
                             ],
@@ -7513,7 +7513,7 @@ paths:
                       - admin: true
                         certificate: >-
                           LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCkNlcnQgZGF0YSB3b3VsZCBiZSBoZXJlIGlmIHRoaXMgd2FzIHJlYWwKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
-                        optools_url: 'http://localhost:3100'
+                        optools_url: 'http://localhost:3000'
                         package_id: >-
                           marbles_1:92321c359d1efcd65dc34c6ee334e37870a4a2130889473173fad3ddf7c02249
                         peers:
@@ -7527,7 +7527,7 @@ paths:
                       - admin: true
                         certificate: >-
                           LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCkNlcnQgZGF0YSB3b3VsZCBiZSBoZXJlIGlmIHRoaXMgd2FzIHJlYWwKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
-                        optools_url: 'http://localhost:3100'
+                        optools_url: 'http://localhost:3000'
                         package_id: >-
                           marbles_1:92321c359d1efcd65dc34c6ee334e37870a4a2130889473173fad3ddf7c02249
                         peers:
@@ -10538,7 +10538,7 @@ paths:
                   value:
                     message: in-progress
                     id: 03_ibp_db_backup_1592924104038
-                    url: 'http://localhost:3100/ak/api/v3/backups/03_ibp_db_backup_1592924104038'
+                    url: 'http://localhost:3000/ak/api/v3/backups/03_ibp_db_backup_1592924104038'
         401:
           description: Request is unauthorized (invalid credentials).
           content:
@@ -10604,7 +10604,7 @@ paths:
                 response:
                   value:
                     message: in-progress
-                    url: 'http://localhost:3100/ak/api/v1/webhooks/txs/nboqur'
+                    url: 'http://localhost:3000/ak/api/v1/webhooks/txs/nboqur'
         401:
           description: Request is unauthorized (invalid credentials).
           content:
@@ -10660,7 +10660,7 @@ paths:
                 response:
                   value:
                     message: in-progress
-                    url: 'http://localhost:3100/ak/api/v1/webhooks/txs/nboqur'
+                    url: 'http://localhost:3000/ak/api/v1/webhooks/txs/nboqur'
         401:
           description: Request is unauthorized (invalid credentials).
           content:
@@ -14747,7 +14747,7 @@ components:
         HOST_URL:
           type: string
           description: The external URL to reach the IBP console.
-          example: http://localhost:3100
+          example: http://localhost:3000
         IAM_CACHE_ENABLED:
           type: boolean
           description: If true an in memory cache will be used to interface with the IBM IAM (an authorization) service. [Only applies if IBP is running in IBM Cloud]
@@ -14759,7 +14759,7 @@ components:
         IBM_ID_CALLBACK_URL:
           type: string
           description: The URL to use during SSO login with the IBM IAM service. [Only applies if IBP is running in IBM Cloud]
-          example: http://localhost:3100/auth/login
+          example: http://localhost:3000/auth/login
         IGNORE_CONFIG_FILE:
           type: boolean
           description: If true the config file will not be loaded during startup. Thus settings in the config file will not take effect.
@@ -14780,7 +14780,7 @@ components:
           example: ibmcloud
         LANDING_URL:
           type: string
-          example: http://localhost:3100
+          example: http://localhost:3000
         LOGIN_URI:
           type: string
           example: /auth/login
@@ -14819,11 +14819,11 @@ components:
         PROXY_TLS_HTTP_URL:
           type: string
           description: The URL to use to proxy an http request to a Fabric component.
-          example: http://localhost:3100
+          example: http://localhost:3000
         PROXY_TLS_WS_URL:
           type: string
           description: The URL to use to proxy WebSocket request to a Fabric component.
-          example: http://localhost:3100
+          example: http://localhost:3000
         REGION:
           type: string
           description: If it's "local", things like https are disabled.
@@ -16060,7 +16060,7 @@ components:
     SignatureOptools_url:
       type: string
       description: The url of the IBP console for this org. Include protocol, port, & hostname. Field is parsed during request distribution. The path/route to use during request distribution will be decided internally by the paths availability.
-      example: http://localhost:3100
+      example: http://localhost:3000
 
     SignatureSignature: # do not base64 validation to this field, for a ccd tx it will be a simple string
       type: string
@@ -16502,7 +16502,7 @@ components:
         url:
           type: string
           description: A api url to use to download the backup and see its progress.
-          example: http://localhost:3100/ak/api/v3/backups/03_ibp_db_backup_1592924104038
+          example: http://localhost:3000/ak/api/v3/backups/03_ibp_db_backup_1592924104038
 
     AttachBackupResponse:
       type: object
@@ -16557,7 +16557,7 @@ components:
         url:
           type: string
           description: A api url to use to checkup on the status of the restore.
-          example: http://localhost:3100/ak/api/v1/webhooks/txs/nboqur
+          example: http://localhost:3000/ak/api/v1/webhooks/txs/nboqur
 
     RestoreBackupDataBody:
       type: object
@@ -16588,7 +16588,7 @@ components:
         client_webhook_url:
           type: string
           description: Provide a webhook url. This url will receive a POST request when the restore is complete. Embedded basic auth supported.
-          example: http://localhost:3100/api/v3/example/webhooks/asdf"
+          example: http://localhost:3000/api/v3/example/webhooks/asdf"
 
     GetBackupResponse:
       type: object

@@ -6,10 +6,10 @@ networks:
 
 services:
     fabric-console:
-        container_name: fabric-console
+        container_name: fabric-console1
         image: ghcr.io/hyperledger-labs/fabric-console:latest
         ports:
-            - "3100:3100"
+            - "3100:3000"
         volumes:
             - ./console/env:/home/athena/env
         environment:
@@ -20,16 +20,16 @@ services:
             - test
 
     configtxlator:
-        container_name: configtxlator
+        container_name: configtxlator1
         image: hyperledger/fabric-tools:2.2.3
         command: /bin/bash -c "/usr/local/bin/configtxlator start --CORS=*"
         ports:
-            - "7159:7159"
+            - "7159:7059"
         networks:
             - test
 
     console-couchdb:
-        container_name: console-couchdb
+        container_name: console-couchdb1
         image: couchdb:3.1.1
         environment:
             - COUCHDB_USER=admin
@@ -37,7 +37,7 @@ services:
         volumes:
             - "couch-data:/opt/couchdb/data"
         ports:
-            - "5185:5184"
+            - "5185:5984"
         networks:
         - test
 volumes:

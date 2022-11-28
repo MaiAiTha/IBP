@@ -431,7 +431,7 @@ module.exports = function (logger, ev, t) {
 		// call restore api on the other console
 		//--------------------------------------------------
 		function send_restore(new_console_url, backup, cb) {
-			backup.client_webhook_url = 'http://localhost:3100/api/v3/testing';							// dsh todo rethink this, placeholder
+			backup.client_webhook_url = 'http://localhost:3000/api/v3/testing';							// dsh todo rethink this, placeholder
 			const res_opts = {
 				_name: 'migration-restore',
 				_max_attempts: 1,

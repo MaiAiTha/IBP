@@ -59,7 +59,7 @@ jq --arg ORG1_ROOT_CERT "$ORG1_ROOT_CERT" \
 
 #jq --arg ORG2_ROOT_CERT "$ORG2_ROOT_CERT" \
 #	'.root_certs[0] = $ORG2_ROOT_CERT | .tls_root_certs[0] = $ORG2_ROOT_CERT | .fabric_node_ous.admin_ou_identifier.certificate = $ORG2_ROOT_CERT | .fabric_node_ous.client_ou_identifier.certificate = $ORG2_ROOT_CERT | .fabric_node_ous.orderer_ou_identifier.certificate = $ORG2_ROOT_CERT | .fabric_node_ous.peer_ou_identifier.certificate = $ORG2_ROOT_CERT' \
-#	${TEMPLATE_ROOT}/Organizations/org2msp_msp.json > ${ASSETS_ROOT}/Organizations/org2msp_msp.json
+	#${TEMPLATE_ROOT}/Organizations/org2msp_msp.json > ${ASSETS_ROOT}/Organizations/org2msp_msp.json
 
 jq --arg ORDERER_ROOT_CERT "$ORDERER_ROOT_CERT" \
 	'.root_certs[0] = $ORDERER_ROOT_CERT | .tls_root_certs[0] = $ORDERER_ROOT_CERT | .fabric_node_ous.admin_ou_identifier.certificate = $ORDERER_ROOT_CERT | .fabric_node_ous.client_ou_identifier.certificate = $ORDERER_ROOT_CERT | .fabric_node_ous.orderer_ou_identifier.certificate = $ORDERER_ROOT_CERT | .fabric_node_ous.peer_ou_identifier.certificate = $ORDERER_ROOT_CERT' \

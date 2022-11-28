@@ -65,10 +65,10 @@ const ev = {
 	DB_CONNECTION_STRING: DB_CONNECTION_STRING,
 	DESIGN_DOC: DESIGN_DOC,
 	AUTH_SCHEME: 'appid',
-	HOST_URL: 'http://localhost:3100',
+	HOST_URL: 'http://localhost:3000',
 	HOST_WHITE_LIST: ['.*'],
 	SESSION_CACHE_ENABLED: true,
-	CONFIGTXLATOR_URL_ORIGINAL: 'http://localhost:3100',
+	CONFIGTXLATOR_URL_ORIGINAL: 'http://localhost:3000',
 	STR: {
 		MSP: 'msp',
 		MSP_EXTERNAL: 'msp-external',

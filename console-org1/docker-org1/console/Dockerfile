@@ -106,6 +106,6 @@ RUN ls -l $STITCH_DIR/dist
 RUN ls -l $SERVER_HOME
 
 # Fin
-EXPOSE 3100
+EXPOSE 3000
 USER 1001
 CMD [ "node", "server_watcher.js" ]
