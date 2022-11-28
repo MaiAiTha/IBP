@@ -5,7 +5,7 @@ networks:
       name: fabric_test
 
 services:
-    fabric-console:
+    fabric-console2:
         container_name: fabric-console2
         image: ghcr.io/hyperledger-labs/fabric-console:latest
         ports:
@@ -14,12 +14,12 @@ services:
             - ./console/env:/home/athena/env
         environment:
             - CONFIGURE_FILE=./env/config.yaml
-            - DB_CONNECTION_STRING=http://admin:password@console-couchdb:5984
+            - DB_CONNECTION_STRING=http://admin:password@console-couchdb2:5984
             - DB_SYSTEM=athena_system
         networks:
             - test
 
-    configtxlator:
+    configtxlator2:
         container_name: configtxlator2
         image: hyperledger/fabric-tools:2.2.3
         command: /bin/bash -c "/usr/local/bin/configtxlator start --CORS=*"
@@ -28,14 +28,14 @@ services:
         networks:
             - test
 
-    console-couchdb:
+    console-couchdb2:
         container_name: console-couchdb2
         image: couchdb:3.1.1
         environment:
             - COUCHDB_USER=admin
             - COUCHDB_PASSWORD=password
         volumes:
-            - "couch-data:/opt/couchdb/data2"
+            - "couch-data:/opt/couchdb/data"
         ports:
             - "5285:5984"
         networks:
