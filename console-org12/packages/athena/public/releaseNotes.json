@@ -1,0 +1,314 @@
+[
+	{
+		"version": "1.0.3-28",
+		"date": "8 Aug 2022",
+		"description": [
+			{
+				"title": "New Js Bundler",
+				"details": "Now using `esbuild` to build the Fabric Operations console. This allowed us to remove many out-of-date dev dependencies."
+			},
+			{
+				"title": "Fixed appending orderer",
+				"details": "Fixed the appending orderer to cluster flow when using an OS without a system channel."
+			},
+			{
+				"title": "Fixed OSN Admin Features",
+				"details": "More fixes for the new OSN Admin Features that use Fabric's \"channel participation\" apis."
+			},
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.3-18",
+		"date": "8 July 2022",
+		"description": [
+			{
+				"title": "Fixed OSN Admin Features",
+				"details": "Several fixes for the new OSN Admin Features that use Fabric's \"channel participation\" apis."
+			},
+			{
+				"title": "Removed auto restart on admin_certs change",
+				"details": "Removed the automatic restart initiated by the console when editing a component's `admin_certs` field. The restart is handled by operator instead."
+			},
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.3-13",
+		"date": "22 June 2022",
+		"description": [
+			{
+				"title": "Enabled OSN Admin Features",
+				"details": "Several features that use Fabric's \"channel participation\" apis has been added. Such as the ability to join/un-join orderers to application channels. Requires Fabric v2.4+."
+			},
+			{
+				"title": "Enabled system channel removal flows",
+				"details": "The ability to remove a system channel from an orderer has been added."
+			},
+			{
+				"title": "Create Orderer Changes",
+				"details": "The ability to choose between creating an orderer with a system channel or without one has been added. Requires Fabric v2.4+ & a configured deployer."
+			},
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.3-12",
+		"date": "9 June 2022",
+		"description": [
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.3-11",
+		"date": "25 May 2022",
+		"description": [
+			{
+				"title": "Fixed remove consenter bug",
+				"details": "Fixed bug where a consenter could not be removed from a channel because the MSP to use was not selectable."
+			},
+			{
+				"title": "Added restart progress",
+				"details": "A progress bar will now appear when a user changes console settings and the console's server is restarting."
+			},
+			{
+				"title": "Support UTF8",
+				"details": "Added support for decoding UTF8 text found in chaincode inputs and outputs (read/write sets)."
+			},
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.3-9",
+		"date": "17 May 2022",
+		"description": [
+			{
+				"title": "Bug fix - api validation",
+				"details": "The hostname safe list is now rebuilt prior to validating the `cahost` field during component creation or update."
+			}
+		]
+	},
+	{
+		"version": "1.0.3-1",
+		"date": "22 April 2022",
+		"description": [
+			{
+				"title": "Node v16",
+				"details": "Updated NodeJS to version 16."
+			},
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-22",
+		"date": "28 March 2022",
+		"description": [
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-21",
+		"date": "25 March 2022",
+		"description": [
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			},
+			{
+				"title": "New Password Rules",
+				"details": "New login passwords must pass OWASP strength tests. [Passwords <= 9 char] not allowed. [Passwords >= 10 && < 20 char] - must have lowercase & uppercase & special characters. [Passwords >= 20 char] - no extra rules."
+			},
+			{
+				"title": "Lower Component Limit",
+				"details": "The maximum component limit has been lowered from 250 components to 75. This restriction applies to the total number of peers + orderers + CAs on 1 console."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-19",
+		"date": "04 March 2022",
+		"description": [
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			},
+			{
+				"title": "Fix MSP Role Builder",
+				"details": "Fixes the 'MSPRole' field building inside a chaincode definition 'validationParameter' field when a value other than 'MEMBER' is set."
+			},
+			{
+				"title": "Fix Endorsement Policy Builder",
+				"details": "Fixes the 'endorsementPolicy' field building inside a chaincode definition 'StaticCollectionConfig' field when an endorsement policy was not set."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-17",
+		"date": "28 Feb 2022",
+		"description": [
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			},
+			{
+				"title": "Prep work for OSNAdmin",
+				"details": "Partial code for the OSN admin endpoint has been added, nothing related to osnadmin is useable."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-13",
+		"date": "31 Jan 2022",
+		"description": [
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-12",
+		"date": "20 Dec 2021",
+		"description": [
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-11",
+		"date": "20 Dec 2021",
+		"description": [
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-10",
+		"date": "20 Dec 2021",
+		"description": [
+			{
+				"title": "Bug fixes",
+				"details": "Miscellaneous fixes."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-9",
+		"date": "10 Dec 2021",
+		"description": [
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-7",
+		"date": "06 Dec 2021",
+		"description": [
+			{
+				"title": "Added read-only-mode",
+				"details": "Added a new setting that can be used to put the console in a read-only-mode."
+			},
+			{
+				"title": "Fix backup api",
+				"details": "Prevented backup api database conflicts."
+			},
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-5",
+		"date": "29 Nov 2021",
+		"description": [
+			{
+				"title": "Default password",
+				"details": "Added a setting to allow users to keep the default password."
+			},
+			{
+				"title": "Fix max component limit",
+				"details": "The max component limit was counting incorrectly."
+			},
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-4",
+		"date": "08 Nov 2021",
+		"description": [
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-3",
+		"date": "19 Oct 2021",
+		"description": [
+			{
+				"title": "Fixed import bug",
+				"details": "Fixed bug that was preventing component importing."
+			},
+			{
+				"title": "Fixed component tile bug",
+				"details": "Fixed issue where new component tiles would temporarily disappear until browser refresh."
+			},
+			{
+				"title": "Bug & security fixes",
+				"details": "Miscellaneous fixes & dependency updates."
+			}
+		]
+	},
+	{
+		"version": "1.0.0-1",
+		"date": "05 Oct 2021",
+		"description": [
+			{
+				"title": "Bug fixes",
+				"details": "Updated Certificate Authority (CA) patch to 1.5.2-1, Peer and ordering node patch to 1.4.12-3, 2.2.4-2. Miscellaneous bug fixes and security patches."
+			}
+		]
+	},
+	{
+		"version": "1.0.0",
+		"date": "15 Sep 2021",
+		"description": [
+			{
+				"title": "Initial release",
+				"details": "Initial release for IBM Support for Hyperledger Fabric 1.0.0."
+			}
+		]
+	}
+]
