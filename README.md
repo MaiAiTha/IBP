@@ -69,7 +69,7 @@ For each console :
 ## Create Identities
 * Switch to Nodes page and perform the following steps
 
-#### ordererca
+#### ordererca for both IBP
 * Select CA "ordererca-local"
 * Associate Identity
 * Enter admin/adminpw for enroll id and secret
@@ -80,7 +80,7 @@ For each console :
 * Enter identity display name as "OrdererMSP Admin"
 * Click "Add Identity to wallet"
 
-#### org1ca
+#### org1ca for org1's IBP
 * Select CA "org1ca-local"
 * Associate Identity
 * Enter admin/adminpw for enroll id and secret
@@ -91,7 +91,7 @@ For each console :
 * Enter identity display name as "Org1MSP Admin"
 * Click "Add Identity to wallet"
 
-#### org2ca
+#### org2ca for org2's IBP
 * Select CA "org2ca-local"
 * Associate Identity
 * Enter admin/adminpw for enroll id and secret
