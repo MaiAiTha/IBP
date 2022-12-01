@@ -1,6 +1,6 @@
 # Fabric Operations Console - Scenario 1
 
-First use case of the previous IBP ;
+### First use case of the previous IBP ;
 * 1 cluster k8s
 * 2 IBP
 * 2 orgs
@@ -8,7 +8,7 @@ First use case of the previous IBP ;
 
 Original console git : https://github.com/hyperledger-labs/fabric-operations-console
 
-### Prerequisites
+## Prerequisites
 
 * zip
 * jq
@@ -26,7 +26,7 @@ git clone https://github.com/MaiAiTha/IBP.git
 cd ibp-scenario-1
 ```
 
-### Bring up HLF network
+## Bring up HLF network
 
 ```
 ./console-org1/scripts/setupNetwork.sh up
@@ -38,7 +38,7 @@ cd ibp-scenario-1
 ./setupConsoles.sh up
 ```
 
-### Create assets for each organization
+## Create assets for each organization
 
 ```
 ./console-org1/scripts/createAssets.sh
@@ -48,7 +48,7 @@ cd ibp-scenario-1
 ./console-org2/scripts/createAssets.sh
 ```
 
-### Console setup
+## Console setup
 
 Open 2 new and different browsers to URL :
 * http://localhost:3100/ for org1 
@@ -66,7 +66,7 @@ For each console :
 * Select zip file .console-org1/workarea/console_assets.zip or .console-org2/workarea/console_assets.zip
 
 
-### Create Identities
+## Create Identities
 * Switch to Nodes page and perform the following steps
 
 #### ordererca
