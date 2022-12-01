@@ -56,7 +56,7 @@ Open 2 new and different browsers to URL :
 * Login with admin/password
 * Change password
 
-(Be sure to use 2 new and different browers to avoid creating conflicts with storaged datas and cookies.)
+(Be sure to use 2 new and different browers in private mods to avoid creating conflicts with storaged datas and cookies.)
 
 ## Import components into console
 
