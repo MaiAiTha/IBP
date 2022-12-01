@@ -1,6 +1,6 @@
 # Fabric Operations Console - Scenario 1
 
-### First use case of the previous IBP ;
+### First use case of IBP :
 * 1 cluster k8s
 * 2 IBP
 * 2 orgs
@@ -116,6 +116,9 @@ For each console :
 * Select orderer "orderer_local"
 * Associate Identity
 * Select "OrdererMSP Admin"
+
+## Enjoy!
+You should be able to manage channels, Using 2.0 lifecycle to install, approve, commit smart contracts following the guide
 
 ## Bring down network and consoles
 
