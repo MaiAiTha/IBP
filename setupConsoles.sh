@@ -3,15 +3,15 @@
 SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )" # Where the script lives
 
 function networkUp() {
-  docker-compose -f ${SRC_DIR}/../ibp-usecase-1/console-org1/docker-org1/docker-compose-console.yaml up -d
-	docker-compose -f ${SRC_DIR}/../ibp-usecase-1/console-org1/docker-proxy/docker-compose-grpc-web.yaml up -d
-	docker-compose -f ${SRC_DIR}/../ibp-usecase-1/console-org2/docker-org2/docker-compose-console.yaml up -d
+  docker-compose -f ${SRC_DIR}/console-org1/docker-org1/docker-compose-console.yaml up -d
+	docker-compose -f ${SRC_DIR}/console-org1/docker-proxy/docker-compose-grpc-web.yaml up -d
+	docker-compose -f ${SRC_DIR}/console-org2/docker-org2/docker-compose-console.yaml up -d
 }
 
 function networkDown() {
-  docker-compose -f ${SRC_DIR}/../ibp-usecase-1/console-org1/docker-org1/docker-compose-console.yaml down
-	docker-compose -f ${SRC_DIR}/../ibp-usecase-1/console-org1/docker-proxy/docker-compose-grpc-web.yaml down
-	docker-compose -f ${SRC_DIR}/../ibp-usecase-1/console-org2/docker-org2/docker-compose-console.yaml down
+  docker-compose -f ${SRC_DIR}/console-org1/docker-org1/docker-compose-console.yaml down
+	docker-compose -f ${SRC_DIR}/console-org1/docker-proxy/docker-compose-grpc-web.yaml down
+	docker-compose -f ${SRC_DIR}/console-org2/docker-org2/docker-compose-console.yaml down
 }
 
 function printHelp() {
